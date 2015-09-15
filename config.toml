@@ -1,0 +1,48 @@
+baseurl = "http://www.vle-project.org"
+languageCode = "en-us"
+title = "VLE, the Virtual Laboratory Environment, a Modeling & Simulation environment"
+MetaDataFormat = "toml"
+theme = "hyde-x"
+paginate = 10
+
+[author]
+        name = "VLE"
+
+[permalinks]
+        post = "/blog/:year/:month/:day/:title/"
+
+[taxonomies]
+        category = "categories"
+
+[params]
+        truncate = true
+        defaultDescription = "Virtual Laboratory Environment, a multiparadidm, multimodel simulation tool based on the DEVS formalism"
+        defaultKeywords = "vle, devs, rvle, pyvle, gauthier quesnel"
+        theme = "theme-base-0d"
+        highlight = "hybrid"
+        tagline = "*virtual laboratory environment*"
+        home = "blog"
+        github = "https://github.com/orgs/vle-forge/"
+        bitbucket = ""
+        linkedin = ""
+        googleplus = ""
+        facebook = "https://www.facebook.com/groups/vle.project/"
+        twitter = ""
+        youtube = ""
+        rss = false # switch to true to enable RSS icon link
+        #googleAuthorship = "Your Google+ profile ID"
+        #googleAnalytics = "Your Google Analytics tracking code"
+        #gravatarHash = "MD5 hash of your Gravatar email address"
+        # flattr = ""  # populate with your flattr uid
+
+## [[menu.main]]
+##     name = "about"
+##     pre = "<i class='fa fa-heart'></i>"
+##     weight = -110
+##     identifier = "about"
+##     url = "/about/"
+## [[menu.main]]
+##     name = "getting started"
+##     pre = "<i class='fa fa-road'></i>"
+##     weight = -100
+##     url = "/getting-started/"
