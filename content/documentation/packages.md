@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["documentation", "package"]
 date = "2015-09-15T10:28:18+02:00"
 description = ""
 keywords = []

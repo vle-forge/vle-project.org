@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["about"]
 date = "2015-09-14T16:41:49+02:00"
 description = ""
-keywords = []
+keywords = ["about","vle","license"]
 title = "VLE"
 +++
 
@@ -54,5 +54,5 @@ VLE is a free environment of multi-modelling and simulation developed under the
 [licence GPL v3.0]. All source code are availabled on [Github].
 
   [DEVS]: http://en.wikipedia.org/wiki/Discrete_Event_System_Specification
-  [licence GPL v3.0]: http://gplv3.fsf.org/
+  [license GPL v3.0]: http://gplv3.fsf.org/
   [Github]: https://github.com/orgs/vle-forge/dashboard

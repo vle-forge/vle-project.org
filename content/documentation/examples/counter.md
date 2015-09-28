@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["documentation", "c++", "atomic-model"]
 date = "2015-09-17T14:24:15+02:00"
 description = ""
-keywords = []
+keywords = ["devs", "atomic", "model", "counter"]
 title = "counter"
 +++
 
