@@ -7,6 +7,11 @@ title = "tutorials"
 menu = "main"
 +++
 
+## Classic tutorials
+
+- [First models]({{< ref "tutorials/tuto-01.md" >}}): create two models from
+  scratch.
+
 ## forrester
 
 This [tutorial](http://www.youtube.com/watch?v=WAsqKIuIOqg&feature=youtu.be)
