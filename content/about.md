@@ -17,6 +17,7 @@ simulation, VLE integrates, i.e. couples, heterogeneous formalisms in one
 coherent simulation model. [VLE] supports the new generation of inter-
 disciplinary simulation models…
 
-![GVLE 1.1.2 in action](/images/gvle-1.1.2.png)
+{{< figure src="/images/gvle-1.1.2.png" title="GVLE 1.1.2 in action" >}}
+
 
    [VLE]: vle-details
