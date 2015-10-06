@@ -32,6 +32,7 @@ paginate = 10
         rss = false # switch to true to enable RSS icon link
         #googleAuthorship = "Your Google+ profile ID"
         #googleAnalytics = "Your Google Analytics tracking code"
+        gravatarHash = "ffcdf549ea8f80ea6c5c24bfb567d3f9"
         #gravatarHash = "MD5 hash of your Gravatar email address"
         # flattr = ""  # populate with your flattr uid
 
