@@ -13,6 +13,7 @@ paginate = 10
 
 [taxonomies]
         category = "categories"
+	tag = "tags"
 
 [params]
         truncate = true
