@@ -19,5 +19,10 @@ disciplinary simulation models…
 
 {{< figure src="/media/gvle-1.1.2.png" title="GVLE 1.1.2 in action" >}}
 
+### Publications
+
+All the work leading to the proposed [VLE][VLE] and the [VLE][VLE] uses are
+availables in the [publications][publications] page.
 
    [VLE]: vle-details
+   [publications]: publications
