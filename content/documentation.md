@@ -18,10 +18,22 @@ documentation and data. The accepted program for handling these
 ### Extensions
 
 VLE provides several [packages] to simplify the development of atomic
-models. These pacakges are called [extensions] and provides behavior
+models. These packages are called [extensions] and provides behavior
 like: finite state automaton, ordinary differential equation solver,
 Petrinet, planning and decision making etc. Some extensions also
 provide graphical interfaces and C++ code generators.
+
+### Programs and ports
+
+VLE provides the VFL (_VLE Foundation Library_). This library is used
+to develop:
+
+- [VLE]({{< ref "documentation/vle-cli.md" >}}): the command line
+  interface
+- [GVLE]({{< ref "documentation/gvle.md" >}}): the graphical user
+  interface
+- [RVLE]({{< ref "documentation/rvle.md" >}}): the R project package
+- [PyVLE]({{< ref "documentation/pyvle.md" >}}): the python package.
 
 ### C++
 
