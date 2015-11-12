@@ -204,7 +204,7 @@ start GVLE and open the *counter-generator* package.
 
 {{< figure src="/tutorials/images/tuto-07.png" caption="In the dynamics dialog box, select the Counter library (generated from the Counter.cpp file)" >}}
 
-{{< figure src="/tutorials/images/tuto-08.png" caption="Finally select the dynamics to the model A and do the same for the second model but with the Generator library" >}}
+{{< figure src="/tutorials/images/tuto-08.png" caption="Finally select the Generator dynamics to the model A and do the same for the second model but with the Counter library" >}}
 
 {{< figure src="/tutorials/images/tuto-09.png" caption="Add a new view into the view dialog box. Set the view type to time-step 1.0. Each time-step, the view call the observation function of all observable (all atomic model with the specified observable" >}}
 

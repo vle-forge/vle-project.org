@@ -10,7 +10,10 @@ menu = "main"
 ## Classic tutorials
 
 - [First models]({{< ref "tutorials/tuto-01.md" >}}): create two models from
-  scratch.
+  scratch and assign observation. keywords: C++, package and observation.
+- [Lotka-Volterra]({{< ref "tutorials/tuto-02.md" >}}): create a simple Euler
+  model, assign observation and experiment conditions. keywords: C++, package,
+  observation, conditions and rvle
 
 ## forrester
 
