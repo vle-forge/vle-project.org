@@ -7,11 +7,6 @@ title = "documentation"
 menu = "main"
 +++
 
-### Specific documentation for each version
-
-- [VLE 1.1]({{< ref "documentation/vle-1.1.md" >}}) stable version.
-- [VLE 1.3]({{< ref "documentation/vle-1.3.md" >}}) work in progress.
-- [VLE 2.0]({{< ref "documentation/vle-2.0.md" >}}) work in progress.
 
 ### Discrete Event Simulation platform
 
@@ -80,3 +75,18 @@ provided by the [GNU Project](http://wwww.gnu.org) and the [Boost
 library](http://www.boost.org). The choices of C++, the GNU libraries and the
 concepts of components have made the VLE an efficient and portable environment,
 easily modifiable and fast to develop.
+
+### Specific documentation for each version
+
+- [VLE 1.1]({{< ref "documentation/vle-1.1.md" >}}) stable version.
+- [VLE 1.3]({{< ref "documentation/vle-1.3.md" >}}) work in progress.
+- [VLE 2.0]({{< ref "documentation/vle-2.0.md" >}}) work in progress.
+
+### How to upgrade models
+
+- [upgrade from vle 1.0.3 to vle 1.1](
+{{< ref "documentation/upgrade-from-vle-1.0.3-to-vle-1.1.md" >}})
+- [upgrade from vle 1.1 to vle 1.2](
+{{< ref "documentation/upgrade-from-vle-1.1-to-vle-1.2.md" >}})
+- [upgrade from vle 1.2 to vle 1.3](
+{{< ref "documentation/upgrade-from-vle-1.2-to-vle-1.3.md" >}})

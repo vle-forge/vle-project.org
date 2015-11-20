@@ -18,7 +18,13 @@ applications for VLE framework.
 
 ### Installation
 
+- you can get source code of pyvle on the 
+[Download Page of vle-1.1](http://www.vle-project.org/vle-1.1)
+- or on github 
 
+```
+git clone https://github.com/vle-forge/pyvle.git
+```
 
 ### Usage
 
