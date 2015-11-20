@@ -1,10 +1,10 @@
 +++
-categories = ["software"]
+categories = ["vle-1.3", "software"]
 date = "2015-09-18T10:38:07+02:00"
 draft = false
 description = ""
 keywords = ["vle", "download"]
-title = "vle 1.0"
+title = "vle 1.3"
 menu = "main"
 +++
 

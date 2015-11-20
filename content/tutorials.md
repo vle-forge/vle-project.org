@@ -7,7 +7,10 @@ title = "tutorials"
 menu = "main"
 +++
 
-## Classic tutorials
+These tutorials are made for the [version 1.1]({{< ref
+"documentation/vle-1.1.md" >}}) of VLE.
+
+### Classic tutorials
 
 - [First models]({{< ref "tutorials/tuto-01.md" >}}): create two models from
   scratch and assign observation. keywords: C++, package and observation.
@@ -15,7 +18,7 @@ menu = "main"
   model, assign observation and experiment conditions. keywords: C++, package,
   observation, conditions and rvle
 
-## forrester
+### forrester
 
 This [tutorial](http://www.youtube.com/watch?v=WAsqKIuIOqg&feature=youtu.be)
 shows how to use the Forrester extension:

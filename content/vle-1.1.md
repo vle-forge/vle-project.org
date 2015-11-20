@@ -1,5 +1,5 @@
 +++
-categories = ["software"]
+categories = ["vle-1.1", "software"]
 date = "2015-09-18T10:38:07+02:00"
 draft = false
 description = ""
@@ -7,6 +7,12 @@ keywords = ["vle", "download"]
 title = "vle 1.1"
 menu = "main"
 +++
+
+### Documentation
+
+All documentation about packages, VLE, GVLE, PyVLE, RVLE, VPZ file format,
+command line interface are available is the [specific documentation]({{< ref
+"documentation/vle-1.1.md">}}) page.
 
 ### Download
 
