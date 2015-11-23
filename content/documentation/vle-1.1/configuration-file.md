@@ -3,18 +3,18 @@ categories = []
 date = "2015-11-21T16:58:32+01:00"
 description = ""
 keywords = []
-title = "configuration file"
+title = "Configuration file"
 
 +++
 
-The VLE configuration file provides preferences that users can set.
-You can find this file into the [VLE_HOME directory]({{< ref 
-"documentation/vle-1.1/vle-home.md">}}) : 
-`VLE_HOME/vle.conf`. There are shared for all the projects on your computer.
-Each line represents one preference, the format is the following 
-`variable=value`. The difference preferences are listed below : 
+The VLE configuration file provides preferences that users can set. You can find
+this file into the [VLE_HOME directory]({{< ref
+"documentation/vle-1.1/vle-home.md">}}): `VLE_HOME/vle.conf`. There are shared
+for all the projects on your computer. Each line represents one preference, the
+format is the following `variable=value`. The difference preferences are listed
+below:
 
-```
+```ini
 gvle.editor.auto-indent=1
 gvle.editor.font=Monospace 10
 gvle.editor.highlight-brackets=1
@@ -50,35 +50,37 @@ vle.remote.proxy_port=
 vle.remote.url=http://www.vle-project.org/pub/1.1
 ```
 
-
 ### How to modify the preferences.
 
-There are two possibilities for modifying the preferences :
+There are two possibilities for modifying the preferences:
 
-* you can directly edit the vle.conf file, or
-* you can use the [vle CLI]({{< ref "documentation/vle-1.1/vle-cli.md">}}) 
-in _configuration_ mode. For example, the command 
+* You can directly edit the `vle.conf` file, or
+* You can use the [vle CLI]({{< ref "documentation/vle-1.1/vle-cli.md">}}) in
+  _configuration_ mode. For example, the following command will modify the font
+  of the [gvle program]({{< ref "documentation/vle-1.1/gvle.md">}}).
 
-`vle -C gvle.editor.font=Monospace 9` will modify the font of the 
-[gvle program]({{< ref "documentation/vle-1.1/gvle.md">}}).  
+```bash
+vle -C gvle.editor.font=Monospace 9
+```
 
-In these two cases, the modification can lead to dysfunctions of vle. 
-To reset the preferences, simply remove the vle.conf file and call
-`vle --restart` from the CLI.
+In these two cases, the modification can lead to dysfunctions of VLE. To reset
+the preferences, simply remove the `vle.conf` file and call `vle --restart` from
+the CLI.
 
-### The gvle preferences
+### The GVLE preferences
 
-The preferences that starts with <tt>gvle.*</tt> stands for graphical
-preferences of [gvle]({{< ref "documentation/vle-1.1/gvle.md">}}). 
-The gvle application provides tools to modify them, 
+The preferences that starts with `gvle.*` stands for graphical
+preferences of [GVLE]({{< ref "documentation/vle-1.1/gvle.md">}}).
+The GVLE application provides tools to modify them,
 but you can directly set these preferences.
 
 ### The packages preferences
 
-The package preferences (starting with `vle.packages.*`) are essentially 
-preferences for the building process of [packages]({{< ref 
+The package preferences (starting with `vle.packages.*`) are essentially
+preferences for the building process of [packages]({{< ref
 "documentation/vle-1.1/packages.md">}}). For example if you want to use parallel
-build of 'make' you can call (in this example using 3 threads) :
+build of `make` you can use the following command (in this example using 3
+threads):
 
 ```bash
 vle -C  vle.packages.build=cmake --build '%1%'  --target all -- -j3
@@ -87,6 +89,6 @@ vle -C  vle.packages.build=cmake --build '%1%'  --target all -- -j3
 ### The remote preferences
 
 The remote preferences (starting with `vle.remote.*`) are the preferences
-related to the remote features of vle. You can for example add remote URL
-pointing to a [package distribution]({{< ref 
+related to the remote features of VLE. You can for example add remote URL
+pointing to a [package distribution]({{< ref
 "documentation/vle-1.1/distributions.md">}}).
