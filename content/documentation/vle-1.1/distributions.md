@@ -3,43 +3,41 @@ categories = []
 date = "2015-11-21T16:09:23+01:00"
 description = ""
 keywords = []
-title = "distributions"
+title = "Distributions"
 
 +++
 
-A distribution is a set of [packages]({{< ref 
-"documentation/vle-1.1/packages.md">}}) available on an URL and a description 
-file `packages.pkg`. For an example, you can look at the [VLE distribution]({{< 
+A distribution is a set of [packages]({{< ref
+"documentation/vle-1.1/packages.md">}}) available on an URL and a description
+file `packages.pkg`. For an example, you can look at the [VLE distribution]({{<
 ref "documentation/vle-1.1/vle-packages-distribution.md">}}).
-
 
 ### How to use a distribution
 
-To use a package distribution you have to add a remote URL into your vle.conf 
-file (see the remote preferences of 
-[vle.conf documentation]({{< ref 
+To use a package distribution you have to add a remote URL into your `vle.conf`
+file (see the remote preferences of [vle.conf documentation]({{< ref
 "documentation/vle-1.1/configuration-file.md">}}). 
-Be carefull to add only URLs that you trust in. For example to add an URL of a
+Be careful to add only URLs that you trust in. For example to add an URL of a
 distribution `http://mydistrib/`, update the following line
 
 ```
 vle.remote.url=http://www.vle-project.org/pub/1.1
 ```
 
-with
+With:
 
 ```
 vle.remote.url=http://www.vle-project.org/pub/1.1,http://mydistrib/
 ```
 
-Then you have to perfom an update of the local view of the remote packages:
+Then you have to perform an update of the local view of the remote packages:
 
 ```bash
 vle --remote update
 ```
 
-To install packages from this distribution you can use the remote mode
-the [vle CLI] (VLE-Application-for-vle-1.1).
+To install packages from this distribution you can use the remote mode the [vle
+CLI] (VLE-Application-for-vle-1.1).
 
 ### Content of a distribution
 
@@ -53,10 +51,9 @@ $http://mydistribution/
   └─ ...
 ```
 
-The `packages.pkg` is simply the concatenation of the 
-`Description.txt` files of the packages contained into the distribution 
-(see [packages]({{< ref "documentation/vle-1.1/packages.md">}}) structure).
-For example:
+The `packages.pkg` is simply the concatenation of the `Description.txt` files of
+the packages contained into the distribution (see [packages]({{< ref
+"documentation/vle-1.1/packages.md">}}) structure). For example:
 
 ```
 Package: mypkg1

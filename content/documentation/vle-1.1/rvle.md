@@ -3,7 +3,7 @@ categories = ["documentation", "rvle"]
 date = "2015-10-28T11:05:53+01:00"
 description = "RVLE description"
 keywords = ["r", "rvle"]
-title = "rvle"
+title = "RVLE"
 +++
 
 RVLE, is a [R Package](https://www.r-project.org/), to call [VLE]({{<

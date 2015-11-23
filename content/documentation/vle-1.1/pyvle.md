@@ -3,12 +3,12 @@ categories = ["documentation", "pyvle"]
 date = "2015-10-28T11:16:42+01:00"
 description = "PyVLE description"
 keywords = ["python", "pyvle"]
-title = "pyvle"
+title = "PyVLE"
 +++
 
 PyVLE is a [Python](https://www.python.org/) package for using VLE
-framework into Python. It provides features such as loading vpz files,
-modifying conditions values of models, simulating vle models and
+framework into Python. It provides features such as loading VPZ files,
+modifying conditions values of models, simulating VLE models and
 recovering simulation results. It provides other features regarding
 the experiment such as modifying duration or seed, obtaining
 information on models and views.
