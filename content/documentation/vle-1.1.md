@@ -31,20 +31,50 @@ like: finite state automaton, ordinary differential equation solver,
 Petrinet, planning and decision making etc. Some extensions also
 provide graphical interfaces and C++ code generators.
 
+### Distributions
+
+[Package distributions]({{< ref "documentation/vle-1.1/distributions.md" >}})
+are sets of VLE packages available through http. You can either use a
+distribution which is already available or provide your own distribution.
+VLE offers the possibility to automatically download and install packages 
+from distributions. The modeling extension and tools developped by the VLE
+development team are thus provided into the [VLE package distribution]({{< ref 
+"documentation/vle-1.1/vle-packages-distribution.md">}}).
+
 ### Programs and ports
 
 VLE provides the VFL (_VLE Foundation Library_). This library is used
 to develop:
 
-- [VLE]({{< ref "documentation/vle-1.1/vle-cli.md" >}}): the command line
-  interface
-- [GVLE]({{< ref "documentation/vle-1.1/gvle.md" >}}): the graphical user
-  interface
-- [RVLE]({{< ref "documentation/vle-1.1/rvle.md" >}}): the R project package
-- [PyVLE]({{< ref "documentation/vle-1.1/pyvle.md" >}}): the python package.
+- [vle]({{< ref "documentation/vle-1.1/vle-cli.md" >}}): the command line
+  interface. It can be used in particular for simulating models, installing 
+  packages. 
+- [gvle]({{< ref "documentation/vle-1.1/gvle.md" >}}): the graphical user
+  interface. It is required for developping models.
+- [mvle]({{< ref "documentation/vle-1.1/mvle.md" >}}): a program for 
+parallelizing simulations; it requires a MPI library.
+- [rvle]({{< ref "documentation/vle-1.1/rvle.md" >}}): the R package.
+  This port allows to use vle into a R session.
+- [pyvle]({{< ref "documentation/vle-1.1/pyvle.md" >}}): the python package.
+  This port allows to use vle into a python session.
 
-### C++
+### Download and install
 
+* [Download page of vle-1.1](http://www.vle-project.org/vle-1.1) for downloading
+vle, the packages and the ports.
+* [Installation page of vle-1.1]({{< ref
+"documentation/vle-1.1/installation.md">}})
+* [Installation page of rvle-1.1]({{< ref
+"documentation/vle-1.1/rvle.md">}})
+
+
+### Technical details
+
+
+#### C++
+
+The [C++ API documentations](http://www.vle-project.org/doxygen/1.1/) are daily
+generated from the source code.
 With VLE, a model or an [extension] is a system plugin (*dll* or *so*)
 which is obtained from compiling a C++ code. Thus, it is necessary to
 know the part of the VLE's C++ API corresponding to the model or
@@ -55,10 +85,52 @@ extension.
 - API of the DEVS Executive model
 - Howto [debug model]
 
-### C++ API
 
-The [C++ API documentations](http://www.vle-project.org/doxygen/1.1/) are daily
-generated from the source code.
+#### VPZ files
+
+The VPZ (VLE Project file Zipped) is an XML file format use in VLE to represent:
+
+* the structure of a model: hierachy of coupled models, atomic models,
+connections, inputs and outputs port
+* the experimental conditions: how to initialize atomic models, multiple 
+values can be given in order to perform multiple simulations.
+* the observation: how to observe atomic models, output file format, 
+observation policy (constant timed observation, by event or at the end of 
+the simulation).
+
+The detail of the format is given here: [VPZ files format]({{< ref 
+"documentation/vle-1.1/vpz-files-format.md" >}}).
+The VPZ files are generally located into the `exp` directory of a VLE 
+[package]({{< ref "documentation/vle-1.1/packages.md">}}).
+
+#### VLE home
+
+The [VLE_HOME]({{< ref "documentation/vle-1.1/vle-home.md">}}) is a directory
+that contains log files, binaries of [packages] and 
+[configuration file]({{< ref "documentation/vle-1.1/configuration-file.md">}}). 
+You should not modify directly this directory unless you know what you are doing.
+
+#### Compiler support
+
+Operating Systems supported by VLE are Linux/Unix and Windows. 
+Compilers used to build VLE and VLE Packages are :
+
+* g++ on Linux/Unix
+* mingw on windows
+
+#### Requirements
+
+* glibmm (>= 2.22)
+* libxml2 (>= 2.8)
+* libarchive (>= 2.0)
+* boost (>= 1.41)
+* cmake (>= 2.8.0)
+* make (>= 1.8)
+* c++ compiler (gcc >= 4.4, clang >= 3.1, intel icc (>= 11.0)
+* any MPI 2 library as OpenMpi, mpich (for [mvle program]({{< ref 
+      "documentation/vle-1.1/mvle.md" >}}))
+* gtkmm (>= 2.22.0) (for [gvle program]({{< ref 
+      "documentation/vle-1.1/gvle.md" >}}))
 
 
    [Atomic model]: atomic-model

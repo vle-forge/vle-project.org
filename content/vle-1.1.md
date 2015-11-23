@@ -46,49 +46,8 @@ command line interface are available is the [specific documentation]({{< ref
 
 ### Installation
 
-#### Linux
-
-- To use VLE 1.1 on linux, you need to build vle. See the
-  [technical documentation for building vle](https://github.com/vle-forge/vle/wiki/Get-vle-from-sources-for-vle-1.1)
-
-- To install RVLE 1.1, you can follow the instructions given here:
-  [installing rvle](https://github.com/vle-forge/vle/wiki/rvle-port-for-vle-1.1)
-
-#### Windows
-
-##### Upgrading from VLE 1.0
-
-- Uninstall the previous version
-- Remove the remaining variable `PKG_CONFIG_PATH` (only earlies versions)
-- Uninstall/remove the Mingw compiler (if not needed by another application)
-- Uninstall Cmake (if not required by another application)
-- Follow the next sections for installation
-
-##### Installation of VLE
-
-- Download the binary file (`vle-X.X.X-Windows-x86.exe` see above)
-  where `X.X.X` is the last version.
-- Install VLE, it is is highly recommended to not to use a path that
-  contains spaces (e.g. change the path `c:\Program Files\vle-X.X.X`
-  to `c:\vle-X.X.X`).
-
-##### Installation requirement for RVLE
-
-- Download R [here](http://cran.rstudio.com/bin/windows/base/) and
-  install it. To use rvle, you have to use the 32 bits application R
-  i386.
-- Add an environment variable `VLE_HOME` with value
-  `c:\users\login\vle` (replace `login` with your own login name). The
-  directory must exist before launching application.
-- Install the R Package RUnit from the CRAN:
-
-        $ install.packages("RUnit") or use the menu 'Packages'
-
-##### Installation of RVLE
-
-- Download rvle (with the same version numbers as vle)
-- Install rvle by choosing into the menu _install packages from local
-  zip file_.
+See specific documentation: [installation of vle-1.1]({{< ref
+"documentation/vle-1.1/installation.md">}})
 
 ### Release highlights
 

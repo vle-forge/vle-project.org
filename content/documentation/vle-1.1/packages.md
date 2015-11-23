@@ -7,73 +7,116 @@ title = "packages"
 menu = "documentation"
 +++
 
-Packages in VLE are autonomous project which regroup source code of DEVS
-models, VPZ files, documentations and data. The goal of the packages in VLE are
-to propose an easily aspect to develop big models and share models between
-modeler.
+Packages in VLE are autonomous projects which gather for example source code of
+PDEVS models, VPZ files, documentations or data. The goal of the packages in VLE
+is to improve the development of big models and to facilitate the sharing of
+models and code.
 
-The home directory of VLE is defined by the environment variable `VLE_HOME`. If
-the environment variable is not defined, VLE use the default path:
+### Example of a package hierarchy
 
-- `$HOME/.vle` on Unix/Linux systems (eg. `/home/user/.vle`).
-- `$HOME/vle` on Win32 or Win64 systems which corresponds to the variables:
-  `%HOMEDRIVE%%HOMEPATH%\vle` (eg. `c:\documents and settings\user\vle`).
+```
+$mypackage
+  |─ buildvle/           ; the compilation directory, 
+  |                      ; it should not be directly modified
+  |─ cmake/              ; cmake scripts
+  |─ data/               ; data of your package
+  |─ doc/                ; documentation of your package
+  |─ exp/                ; experience, ie. vpz, of your package
+  │   └─ CMakeLists.txt  ; CMake file of the directory exp
+  │   └─ mymodel.vpz     ; your experiment (vpz file)
+  |─ src/                ; directory of the source code
+  │   └─ CMakeLists.txt  ; CMake file of the directory src
+  │   └─ mydynamics.cpp  ; cpp code for your dynamics 
+  |                      ; (DEVS atomic model)
+  |─ test/               ; directory containing the unit tests
+  |                      ; for your package
+  └─ Authors.txt         ; a Authors file  
+  └─ CMakeCPack.cmake    ; CMake packaging script
+  └─ CMakeLists.txt      ; a root CMakeFile
+  └─ Description.txt     ; a Description file 
+  └─ License.txt         ; a Licence file 
+  └─ News.txt            ; a News file 
+  └─ Readme.txt          ; a Readme file
+```
 
-The home directory of VLE have the following hierarchy:
+A package or project in VLE have several directories and sub-directories.
+Although all files have their importance we will detail only the most important. 
 
-	VLE_HOME
-	 ├─ pkgs           ; the directory of VLE's packages
-	 │   └─ firemanqss ; an example of paquet: firemanqss
-	 │       ├─ build  ; One directory per package
-	 │       ├─ data
-	 │       ├─ doc
-	 │       ├─ exp
-	 │       ├─ lib
-	 │       └─ src
-	 └─ vle.log        ; log of previous execution of VLE
+### The VPZ files into the exp directory (eg. mymodel.vpz)
 
-Hierarchy of the package
-------------------------
+A VPZ file represents a model and the experiment associated to the model. It 
+can be simulated by [vle application]({{< ref 
+"documentation/vle-1.1/vle-cli.md">}}). It contains the structure of the model
+(seen as a graph) and inputs/outputs of the models. You can edit the model with
+the [gvle application]({{< ref "documentation/vle-1.1/gvle.md">}}). The XML
+structure of this file is detailed [here] ({{< ref 
+"documentation/vle-1.1/vpz-files-format.md">}}).
 
-A package or project in VLE have several directory and sub-directory. Each file
-and directory are important. The following description is a default package in
-provide in VLE:
+### The Description.txt file
 
-	VLE_HOME/pkgs/firemanqss
-	 ├─ build          ; the compilation directory (temporary directory)
-	 ├─ cmake          ; cmake scripts
-	 ├─ data           ; data of your package
-	 ├─ doc            ; documentation of your package
-	 ├─ exp            ; experience, ie. vpz, of your package
-	 ├─ lib            ; shared library directory
-	 ├─ plugins        ; simulators, modeling plugins
-	 ├─ src            ; models' sources of your package
-	 ├─ Authors.txt    ; authors of your package
-	 ├─ License.txt    ; license of your package
-	 ├─ News.txt       ; news about evolution of your package
-	 ├─ Readme.txt     ; some notes about your package
-	 └─ CMakeList.txt  ; a CMake script
+The `Description.txt` gives the description of the project. You should fill it
+with detailed informations about your package. There is an example of a 
+`Description.txt` file :
 
-How to use VLE with packages
-----------------------------
+```
+Package: mypackage
+Version: 0.1.0
+Depends: vle.extension.decision, vle.extension.difference-equation
+Build-Depends: vle.output
+Conflicts:
+Maintainer: My name <mymail>
+Description: Still in progress
+.
+Tags: examples
+Url: http://mydistribution/
+Size: 0
+MD5sum: xxxx
+```
 
-The key, in command line interface:
+You have to least to update the name of the package with the name of the
+directory (ie. mypackage). You can set a version to your package. The 
+`Depends` tag should contain a list of packages you depend on for building your
+dynamics. For example if you use the vle extension for modeling difference
+equations (see [VLE package distribution]({{< ref 
+"documentation/vle-1.1/vle-packages-distribution.md">}})), it has to be listed.
+The `Build-Depends` should contain the list of packages you use (this time,
+without requiring them for the building process), typically it can be the
+vle.output package.
 
-	vle -P name_of_the_directory [command...] files...
+### The cpp files into src directory (eg. mydynamics.cpp)
 
-Commands available are:
+If you have the most integrated mode of use of VLE (using modeling plugins into
+[gvle]({{< ref "documentation/vle-1.1/gvle.md">}})), it is not required that
+you modify these files. They are generated by the modeling plugins.
 
-- `create` to build a new package in the `VLE_HOME/pkgs`
-- `configure` try to run the CMake program in your package.
-- `build` try to compile your package.
-- `test` try the unit test of your package if they exist.
-- `packages` try to build source and binary Zip of your package.
-- `depends` show the depends of your packages.
-- `list` lists all Vpz and plug-ins of your packages.
+Each `cpp` files into `src/` represents an atomic model. An atomic model is a
+cpp class that inherits from `vle::devs::Dynacmis`. Moreover a macro such as 
+`DECLARE_DYNAMICS` has to be used in order to declare the class mentioned 
+above to be a DEVS atomic model.
 
-For example, to configure, build and install the package:
+### The CMakeLists.txt files 
 
-- `vle -P firemanqss configure build`
-  - execute in the build directory, the cmake command.
-  - execute in the build directory, the make command.
-  - execute in the src, the make install command.
+Once again, if you have the most integrated mode of use of VLE, it is not
+required that you modify these files. 
+
+These file are present in each subdirectory of a package. Depending on their
+location they have different roles. For examples the `CMakeLists.txt` file at
+the root directory declares the project and search for VLE includes and 
+binaries. The `CMakeLists.txt` in `src/` declares the cpp target to compile and
+to install.
+
+### How to manipulate VLE packages
+
+In order to design the model the application [gvle application]({{< ref 
+"documentation/vle-1.1/gvle.md">}}) is required.
+Designing the model means modifying the VPZ files of your package. 
+These files are basically XML files and could be edited directly with a text 
+editor; nevertheless `gvle` provides a gui to manipulate VPZ.   
+
+Otherwise in order to perform simulations, using the [vle application]({{< ref 
+"documentation/vle-1.1/vle-cli.md">}}) in the _package_ mode is sufficient. 
+Also `gvle` provides some of these commands such as _clean_, _rclean_, 
+_configure_, _build_ and _create_.
+
+
+
