@@ -1,6 +1,6 @@
-## Publications
+# Publications
 
-### To cite VLE
+## How to cite VLE
 
 Please use the following reference:
 
@@ -12,7 +12,8 @@ ISSN 1569-190X, http://dx.doi.org/10.1016/j.simpat.2008.11.003.
 
 ```bibtex
  @Article{quesnel09,
-   author = {Gauthier Quesnel and Rapha\"el Duboz and \'Eric Ramat},
+   author = {Gauthier Quesnel and Rapha\"el Duboz and
+             \'Eric Ramat},
    title = {{T}he {V}irtual {L}aboratory {E}nvironment --
          {A}n operational framework for multi-modelling,
           simulation and analysis of complex dynamical
@@ -26,13 +27,13 @@ ISSN 1569-190X, http://dx.doi.org/10.1016/j.simpat.2008.11.003.
  }
 ```
 
-### Scientific papers about or using VLE
+## Scientific papers about or using VLE
 
 Please feel free to ask for a copy of any of these articles by sending
 a message to Gauthier Quesnel, or directly to one of the authors of
 the articles.
 
-#### 2013
+*2013*
 
 * Pierre Moreau, Laurent Ruiz, Françoise Vertès, Christine Baratte,
   Luc Delaby, Philippe Faverdin, Chantal Gascuel-Odoux, Benoit
@@ -42,7 +43,7 @@ the articles.
   Systems, Volume 118, June 2013, Pages 41-51, ISSN 0308-521X,
   http://dx.doi.org/10.1016/j.agsy.2013.02.007.
 
-#### 2012
+*2012*
 
 * Quesnel G., Trépos R., Ramat E., Observation of discret event
   models, to appear in the proceedings of the 2nd International
@@ -67,7 +68,7 @@ the articles.
   simulation de systèmes complexes, Studia Informatica Universalis,
   volume 10, number 1, 2012, pp 205-234
 
-#### 2010
+*2010*
 
 * Mahuna Akplogan, Gauthier Quesnel, Frédérick Garcia, Alexandre
  Joannon and Roger Martin-Clouaire, Towards a deliberative agent
@@ -81,7 +82,7 @@ the articles.
  optimization of innovative production systems of goods and services”,
  Hammamet, Tunisia, May 10-12, 2010.
 
-#### 2009
+*2009*
 
 * Olivier Roux, David Duvivier, Gauthier Quesnel, Eric Ramat,
  Optimization of preventive maintenance through a combined
@@ -97,7 +98,7 @@ the articles.
  Simulation and Analysis of Complex Systems, Simulation Modelling
  Practice and Theory, (17), 641-653, April 2009.
 
-#### 2008
+*2008*
 
 * E. Rachelson, P. Fabiani, F. Garcia and G. Quesnel, Une Approche
   basée sur la Simulation pour l'Optimisation des Processus
@@ -113,7 +114,7 @@ the articles.
   Processes: an Improved Algorithm, European Workshop on Reinforcement
   Learning, Villeneuve d'ascq, France, june 30 - july 4, 2008.
 
-#### 2007
+*2007*
 
 * D. Versmisse, C. Macher, E. Ramat, J.-C. Soulié, and O. Thebaud,
   Developing a bioeconomic simulation tool of fisheries dynamics: a
@@ -140,7 +141,7 @@ the articles.
   Multiconference. Bueno Aires, Argentina, February
   8-10, 2007. International Society for Computer Simulation.
 
-#### 2006
+*2006*
 
 * E. Ramat, Chapitre 2 : introduction à la modélisation et à la
   simulation à événements discrets, Modélisation et simulation
@@ -158,7 +159,7 @@ the articles.
   Simulation Modélisation, Optimisation et Simulation des Systèmes :
   Défis et Opportunités, Rabat, 3-5 avril 2006 ''(in french)''.
 
-#### 2005
+*2005*
 
 * D. Versmisse et E. Ramat, Management of perturbations within a
   spatialized differential equations system, in the DEVS framework,
@@ -174,7 +175,7 @@ the articles.
   Management, CABM-HEMA-SMAGET 05, 21-25 mars Bourg Saint Maurice,
   France.
 
-#### 2004
+*2004*
 
 * G. Quesnel, R. Duboz and É. Ramat, DEVS wrapping: A study case, In
   proceedings of Conceptual Modeling and Simulation CMS 2004
@@ -192,7 +193,7 @@ the articles.
   scientifiques et nouveaux usages. Olivier Boissier et Zahia Guessoum
   eds. Paris, 23-26 novembre 2004 ''(in french)''.
 
-#### 2003
+*2003*
 
 * G. Quesnel, R. Duboz et E. Ramat, Comparaison d'approches de
   simulations distribuées à événements discrets d'entités
@@ -200,21 +201,21 @@ the articles.
   STIC, à l'Université du Littoral Côté d'Opale, Calais, Octobre 2003
   ''(in french)''.
 
-#### 2002
+*2002*
 
 * R. Duboz, XML for the representation of semantic in model coupling,
   Proceedings of Artificial Intelligence, Simulation and Planning (AIS
   2002), Lisbonne, pp. 267-270.
 
-### PhD Thesis
+## PhD Thesis
 
-#### 2006
+*2006*
 
 * G.Quesnel Approche formelle et opérationnelle de la
   multi-modélisation et de la simulation des systèmes complexes ''(in
   french)''.
 
-#### 2004
+*2004*
 
 * R. Duboz Intégration de modèles hétérogènes pour la modélisation et
   la simulation de systèmes complexes : Application au transfert

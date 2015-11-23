@@ -8,35 +8,35 @@ title = "vle 1.1"
 menu = "main"
 +++
 
-### Documentation
+# Documentation
 
 All documentation about packages, VLE, GVLE, PyVLE, RVLE, VPZ file format,
 command line interface are available is the [specific documentation]({{< ref
 "documentation/vle-1.1.md">}}) page.
 
-### Download
+# Download
 
-#### VLE (includes VLE, GVLE, VFL)
+## VLE (includes VLE, GVLE, VFL)
 
 | OS | URL |
 | ---| --- |
 | Windows | [vle-1.1.2-Windows.exe](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2-Windows.exe) |
 | Sources | [vle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2.tar.gz) |
 
-#### RVLE (R Package to bind R and VLE)
+## RVLE (R Package to bind R and VLE)
 
 | OS | URL |
 | ---| --- |
 | Windows | [rvle_1.1.2-0.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.zip) |
 | Sources | [rvle_1.1.2-0.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.tar.gz) |
 
-#### PyVLE (Python binding)
+## PyVLE (Python binding)
 
 | OS | URL |
 | ---| --- |
 | Sources | [pyvle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/pyvle-1.1.2.tar.gz) |
 
-#### Packages (examples and extensions)
+## Packages (examples and extensions)
 
 | OS | URL |
 | ---| --- |
@@ -44,12 +44,12 @@ command line interface are available is the [specific documentation]({{< ref
 | Sources | [packages-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.tar.gz) |
 
 
-### Installation
+# Installation
 
 See specific documentation: [installation of vle-1.1]({{< ref
 "documentation/vle-1.1/installation.md">}})
 
-### Release highlights
+# Release highlights
 
 - From VLE 1.1, the extension (FSA, Petri net, Difference Equation,
   etc.) are provided into packages. A package can provides simulators,

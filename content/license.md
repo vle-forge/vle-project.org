@@ -6,11 +6,12 @@ keywords = ["license", "blog", "code"]
 title = "license"
 +++
 
-### Content license
+# Content license
 
-All non-code website content is licensed under [Licence Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
+All non-code website content is licensed under [Licence Creative Commons
+Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
 
-### Code license
+# Code license
 
 All source code files and snippets found on this blog, unless
 otherwise explicitly noted, are licensed under the MIT license terms

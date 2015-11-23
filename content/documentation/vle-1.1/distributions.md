@@ -12,7 +12,7 @@ A distribution is a set of [packages]({{< ref
 file `packages.pkg`. For an example, you can look at the [VLE distribution]({{<
 ref "documentation/vle-1.1/vle-packages-distribution.md">}}).
 
-### How to use a distribution
+# How to use a distribution
 
 To use a package distribution you have to add a remote URL into your `vle.conf`
 file (see the remote preferences of [vle.conf documentation]({{< ref
@@ -39,7 +39,7 @@ vle --remote update
 To install packages from this distribution you can use the remote mode the [vle
 CLI] (VLE-Application-for-vle-1.1).
 
-### Content of a distribution
+# Content of a distribution
 
 The content of a distribution should have the following structure.
 

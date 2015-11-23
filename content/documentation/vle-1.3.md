@@ -7,9 +7,7 @@ title = "vle 1.3"
 
 +++
 
-
-
-### C++ API
+# C++ API
 
 The [C++ API documentations](http://www.vle-project.org/doxygen/dev/) are daily
 generated from the source code.

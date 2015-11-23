@@ -12,7 +12,7 @@ like: finite state automaton, ordinary differential equation solver,
 Petrinet, planning and decision making etc. Some extensions also
 provide graphical interfaces and C ++ code generators.
 
-### Extensions available
+# Extensions available
 
 - `vle.output` provides output plug-ins.  These plugins are in charge
   of recording the outputs of simulations in files (using a csv, a R
@@ -43,7 +43,7 @@ provide graphical interfaces and C ++ code generators.
 - `vle.forrester` a graphical user interface to develop model using
   the Forrester formalism.
 
-### Installation
+# Installation
 
 First, download the packages repository from zip file or Git
 repository and use the command line to build and install the

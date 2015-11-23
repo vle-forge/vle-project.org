@@ -10,7 +10,7 @@ In this tutorial, we create a Lotka-Volterra system solved with Euler. The first
 part shows you how to develop a such model then we use the experimental
 conditions to assign value from the VPZ and use it directly from R.
 
-### First, we develop the model
+# First, we develop the model
 
 ```
 vle -P lotka-volterra create
@@ -127,7 +127,7 @@ model. First, start GVLE and open the *LotkaVolterra* package.
 
 {{< figure src="/tutorials/images/tuto-02-10.png" caption="The result of the simulation is a file in the output directory of the package." >}}
 
-### Experimental condition
+# Experimental condition
 
 Now, we update the source code to use the experimental conditions to easily
 update the parameter *alpĥa*, *beta*, *gamma* and *delta* and the initial states
@@ -232,7 +232,7 @@ In GVLE, use the *Conditions* sub-menu in the *Simulation* menu.
 
 {{< figure src="/tutorials/images/tuto-02-14.png" caption="You can rerun the simulation." >}}
 
-### RVLE
+# RVLE
 
 First change the View plug-in into the View dialogue box and select the plug-in
 called *storage*. This plug-in allows simulation results to be send to R or

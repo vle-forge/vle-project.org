@@ -7,6 +7,8 @@ title = "Configuration file"
 
 +++
 
+# Description
+
 The VLE configuration file provides preferences that users can set. You can find
 this file into the [VLE_HOME directory]({{< ref
 "documentation/vle-1.1/vle-home.md">}}): `VLE_HOME/vle.conf`. There are shared
@@ -50,7 +52,7 @@ vle.remote.proxy_port=
 vle.remote.url=http://www.vle-project.org/pub/1.1
 ```
 
-### How to modify the preferences.
+# How to modify the preferences.
 
 There are two possibilities for modifying the preferences:
 
@@ -67,14 +69,14 @@ In these two cases, the modification can lead to dysfunctions of VLE. To reset
 the preferences, simply remove the `vle.conf` file and call `vle --restart` from
 the CLI.
 
-### The GVLE preferences
+# The GVLE preferences
 
 The preferences that starts with `gvle.*` stands for graphical
 preferences of [GVLE]({{< ref "documentation/vle-1.1/gvle.md">}}).
 The GVLE application provides tools to modify them,
 but you can directly set these preferences.
 
-### The packages preferences
+# The packages preferences
 
 The package preferences (starting with `vle.packages.*`) are essentially
 preferences for the building process of [packages]({{< ref
@@ -86,7 +88,7 @@ threads):
 vle -C  vle.packages.build=cmake --build '%1%'  --target all -- -j3
 ```
 
-### The remote preferences
+# The remote preferences
 
 The remote preferences (starting with `vle.remote.*`) are the preferences
 related to the remote features of VLE. You can for example add remote URL

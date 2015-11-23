@@ -16,7 +16,7 @@ information on models and views.
 PyVLE is one component of a generic solution for developing web
 applications for VLE framework.
 
-### Installation
+# Installation
 
 - you can get source code of pyvle on the 
 [Download Page of vle-1.1](http://www.vle-project.org/vle-1.1)
@@ -26,7 +26,7 @@ applications for VLE framework.
 git clone https://github.com/vle-forge/pyvle.git
 ```
 
-### Usage
+# Usage
 
 Once VLE and PyVLE are installed, you can launch python and import pyvle.
 

@@ -10,15 +10,15 @@ menu = "main"
 These tutorials are made for the [version 1.1]({{< ref
 "documentation/vle-1.1.md" >}}) of VLE.
 
-### Classic tutorials
+# Classic tutorials
 
 - [First models]({{< ref "tutorials/tuto-01.md" >}}): create two models from
-  scratch and assign observation. keywords: C++, package and observation.
+  scratch and assign observation. Keywords: C++, package and observation.
 - [Lotka-Volterra]({{< ref "tutorials/tuto-02.md" >}}): create a simple Euler
-  model, assign observation and experiment conditions. keywords: C++, package,
-  observation, conditions and rvle
+  model, assign observation and experiment conditions. Keywords: C++, package,
+  observation, conditions and RVLE.
 
-### forrester
+# Forrester
 
 This [tutorial](http://www.youtube.com/watch?v=WAsqKIuIOqg&feature=youtu.be)
 shows how to use the Forrester extension:

@@ -7,9 +7,9 @@ title = "Documentation VLE 1.1"
 
 +++
 
-### Generic documentation
+# Generic documentation
 
-#### Kernel
+## Kernel
 
 In VLE, we have implemented the [DSDE abstract
 simulator](http://portal.acm.org/citation.cfm?id=293257) developed by [Fernando
@@ -17,14 +17,14 @@ J. Barros](http://eden.dei.uc.pt/~barros/) which enable parallelization of
 atomic models and dynamic structure changes during simulation. We also
 introduced an observation framework in the DEVS kernel simulator of VLE.
 
-#### Packages
+## Packages
 
 VLE [packages] are standard Unix tar archives optionally compressed with gzip or
 bzip2 which can store the source code of the models, documentation and data. The
 accepted program for handling these [packages] are the *command line interface*
 of VLE, *rvle* and *pyvle*.
 
-#### Extensions
+## Extensions
 
 VLE provides several [packages] to simplify the development of atomic models.
 These packages are called [extensions] and provides behavior like: finite state
@@ -32,7 +32,7 @@ automaton, ordinary differential equation solver, Petrinet, planning and
 decision making etc. Some extensions also provide graphical interfaces and C++
 code generators.
 
-#### Distributions
+## Distributions
 
 [Package distributions]({{< ref "documentation/vle-1.1/distributions.md" >}})
 are sets of VLE packages available through http. You can either use a
@@ -42,7 +42,7 @@ distributions. The modeling extension and tools developed by the VLE development
 team are thus provided into the [VLE package distribution]({{< ref
 "documentation/vle-1.1/vle-packages-distribution.md">}}).
 
-#### Programs and ports
+## Programs and ports
 
 VLE provides the VFL (_VLE Foundation Library_). This library is used to
 develop:
@@ -59,7 +59,7 @@ develop:
 - [pyvle]({{< ref "documentation/vle-1.1/pyvle.md" >}}): the python package.
   This port allows to use VLE Into a python session.
 
-#### Download and install
+## Download and install
 
 * [Download page of vle-1.1](http://www.vle-project.org/vle-1.1) for downloading
   VLE, the packages and the ports.
@@ -68,9 +68,9 @@ develop:
 * [Installation page of rvle-1.1]({{< ref "documentation/vle-1.1/rvle.md">}})
 
 ---
-### Technical details
+# Technical details
 
-#### C++
+## C++
 
 The [C++ API documentations](http://www.vle-project.org/doxygen/1.1/) are daily
 generated from the source code. With VLE, a model or an [extension] is a system
@@ -83,7 +83,7 @@ extension.
 - API of the DEVS Executive model.
 - How to [debug model].
 
-#### Compiler support
+## Compiler support
 
 Operating Systems supported by VLE are Linux/Unix and Windows. Compilers used to
 build VLE and VLE Packages are :
@@ -91,7 +91,7 @@ build VLE and VLE Packages are :
 * g++ on Linux/Unix
 * mingw on windows
 
-#### Requirements
+## Requirements
 
 * glibmm (>= 2.22)
 * libxml2 (>= 2.8)
@@ -106,9 +106,9 @@ build VLE and VLE Packages are :
   >}}))
 
 ---
-### Other details
+# Other details
 
-#### VPZ files
+## VPZ files
 
 The VPZ (VLE Project file Zipped) is an XML file format use in VLE to represent:
 
@@ -124,7 +124,7 @@ The detail of the format is given here: [VPZ files format]({{< ref
 located into the `exp` directory of a VLE [package]({{< ref
 "documentation/vle-1.1/packages.md">}}).
 
-#### VLE home
+## VLE home
 
 The [VLE_HOME]({{< ref "documentation/vle-1.1/vle-home.md">}}) is a directory
 that contains log files, binaries of [packages] and [configuration file]({{< ref

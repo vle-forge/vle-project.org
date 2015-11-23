@@ -6,15 +6,6 @@ keywords = ["cli", "vle"]
 title = "vle cli"
 +++
 
-Table of content:
-
-* <a href="#howtouse">How to use CLI application</a>
-* <a href="#packageMode">The _package_ mode</a>
-* <a href="#remoteMode">The _remote_ mode</a>
-* <a href="#configMode">The _config_ mode</a>
-
-### <a id="howtouse"></a> How to use CLI application
-
 To get access to this application :
 
 * on Linux/Unix, simply type the command `vle --help` in a terminal. The
@@ -24,8 +15,7 @@ absolute path to the vle binary location e.g. : `c:\vle-1.1\bin\vle --help`.
 By default vle is not set into the path, otherwise the command `vle --help`
 should work.
 
-### <a id="packageMode"></a> The _package_ mode
-
+# The _package_ mode
 
 The _package_ mode of vle application `vle -P mypackage` is used to manipulate
 packages. A typical use case of these commands is :
@@ -72,7 +62,7 @@ explorer directly  in order to remove those directories.
 If you want to produce a compressed archive of your package in order to share
 it with others, you can call the command `vle -P mypackage package`.
 
-### <a id="remoteMode"></a> The _remote_ mode
+# The _remote_ mode
 
 The _remote_ mode of vle application `vle --remote` is used to download or
 install packages that are available in [distributions]({{< ref 
@@ -112,7 +102,7 @@ Finally you can install the package with the command `vle -R install vle.output`
 this will download into a temporary directory the package source and launch the
 compilation processes described into the _package_ mode. 
 
-### <a id="configMode"></a> The _config_ mode
+# The _config_ mode
 
 The _configuration_ mode  `vle -C` is a feature that allows you to update
 values of the [vle.conf file]({{< ref 

@@ -5,11 +5,12 @@ title = "discussion"
 menu = "main"
 +++
 
-### IRC
+# IRC
 
-The VLE project has an IRC channel available on the [http://www.freenode.net
-freenode] server. This channel requires no password. You can use any standard
-[IRC client](http://en.wikipedia.org/wiki/Internet_Relay_Chat) client:
+The VLE project has an IRC channel available on the [Freenode
+server](http://www.freenode.net freenode). This channel requires no password.
+You can use any standard [IRC
+client](http://en.wikipedia.org/wiki/Internet_Relay_Chat) client:
 [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for Windows or
 Linux), [Adium](http://adium.aybee.net/) (for Mac OS X) or
 [irssi](http://www.irssi.org/ irssi).
@@ -21,11 +22,11 @@ The parameters to be configured are:
 - Channel: #vle
 - Encoding: UTF-8 (preferably)
 
-### Mailing lists
+# Mailing lists
 
 Via the [Sourceforge](http://www.sourceforge.net/projects/vle) web site, we have
 created a set of _mailing lists_ for the discussions on VLE generally, its
-evolution, bug reports, features requests, etc. in french or English.
+evolution, bug reports, features requests, etc. in French or English.
 
 - [vle-users](http://lists.sourceforge.net/lists/listinfo/vle-users): for any
   users.

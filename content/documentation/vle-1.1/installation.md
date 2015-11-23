@@ -7,22 +7,9 @@ title = "installation"
 
 +++
 
-Table of content:
+# Installation on Windows.
 
-* <a href="#installWin">Installation on Windows</a>
-* <a href="#getcode">Get source code</a>
-* <a href="#buildingoptions">Building options</a>
-* <a href="#builddebiansid">Build on Debian Sid</a>
-* <a href="#buildubuntu12.04">Build on Ubuntu 12.04</a>
-* <a href="#buildubuntu14.04">Build on Ubuntu 14.04</a>
-* <a href="#debpackage">Building a Deb package (Ubuntu or Debian)</a>
-* <a href="#buildwin32">Build on Win32 (not recommended)</a>
-* <a href="#buildwin32cross">Build for Win32 : cross compilation with MXE (not recommended, deprecated)</a>
-
-
-### <a id="installWin"></a> Installation on Windows.
-
-#### Upgrading from VLE 1.0 (optionnal)
+## Upgrading from VLE 1.0 (optionnal)
 
 * Uninstall the previous version
 * Remove the remaining variable `PKG_CONFIG_PATH` (only earlies versions)
@@ -30,15 +17,15 @@ Table of content:
 * Uninstall Cmake (if not required by another application)
 * Follow the next sections for installation
 
-#### Installation of VLE
+## Installation of VLE
 
-* Download the [binary file](http://www.vle-project.org/vle-1.1) 
+* Download the [binary file]({{< ref "download-1.1.md" >}}) 
 (`vle-1.1.X-Windows-x86.exe`) where `1.1.X` is the last version.
 * Install VLE, it is is highly recommended to not to use a path that
   contains spaces (e.g. change the path `c:\Program Files\vle-1.1.X`
   to `c:\vle-1.1.X`).
 
-### <a id="getcode"></a> Get source code 
+# Get source code 
 You can get sources from either the git repository 
 
 ```bash
@@ -49,27 +36,28 @@ git checkout -b v1.1.2 v1.1.2
 
 Or the source archive :
  
-* Download vle-1.1on the [Download Page](http://www.vle-project.org/vle-1.1)
+* Download VLE-1.1 on the [Download Page]({{< relref "download-1.1.md" >}})
 * Decompress the archive (use eg. `tar xfz` on linux or `7zip` on windows)
 
-### <a id="buildingoptions"></a> Building options.
+# Building options.
 
 The examples of buildings process that are given into this page can be modified
 by using arguments of cmake line :
 
 * `-DWITH_MPI` : if OFF , the mpi application `mvle` will not be built, if ON it
-will require that mpi is intalled on your computer. 
+  will require that mpi is installed on your computer. 
 * `-DWITH_GTK` : if OFF, the gui application `gvle` will not be built, this can
-be usefull if it is not required. For example if you just want to launch
+  be useful if it is not required. For example if you just want to launch
 simulations on a cluster, you do not need gvle for the design of the model.
 * `-DWITH_GTKSOURCEVIEW` : on several linux OS gtksourceview which is used for
-the syntax highlighting on the gvle editor is not availabe. This option has no
-meanings if WITH_GTK is OFF.
-* `-DWITH_QT` : if OFF, the gui application `gvle2` will not be built, this
-can be usefull if it is not required. For example if you just want to launch
-simulations on a cluster, you do not need gvle2 for the design of the model.
+  the syntax highlighting on the gvle editor is not available. This option has no
+  meanings if WITH\_GTK is OFF.
+* `-DWITH_QT` : if OFF, the gui application `gvle2` will not be built, this can
+  be useful if it is not required. For example if you just want to launch
+  simulations on a cluster, you do not need gvle2 for the design of the model.
 
-### <a id="builddebiansid"></a>  Build on Debian Sid, Jessie and Wheezy
+# Build on...
+## Build on Debian Sid, Jessie and Wheezy
 
 ```bash
 # install the dependencies
@@ -89,7 +77,7 @@ make
 sudo make install
 ```
 
-### <a id="buildubuntu12.04"></a> Build on Ubuntu 12.04
+## Build on Ubuntu 12.04
 
 ```bash
 # install the dependencies
@@ -109,7 +97,7 @@ make
 sudo make install
 ```
 
-### <a id="buildubuntu14.04"></a> Build on Ubuntu 14.04
+## Build on Ubuntu 14.04
 
 ```bash
 # install the dependencies
@@ -130,17 +118,17 @@ make
 make install
 ```
 
-### <a id="debpackage"></a> Building a Deb package (Ubuntu or Debian).
+# Building a Deb package (Ubuntu or Debian)
 
-Rather than installing directly the binaries and include, you can build a
-debian package. Replace :
+Rather than installing directly the binaries and include, you can build a Debian
+package. Replace :
 
 ```bash
 make
 make install
 ```
 
-with :
+With:
 
 ```bash
 make
@@ -148,7 +136,7 @@ cpack -G DEB
 sudo  dpkg -i vle-1.1-Linux-i686.deb
 ```
 
-### <a id="buildwin32"></a> Build on Win32 (not recommended)
+# Build on Win32 (not recommended)
 
 You should consider using the binaries of vle.
 
@@ -162,13 +150,13 @@ set VLE_BUILD_ENV=c:\natifvle
 
 Get dependencies and dowload vle:
 
-* Download Boost into %VLE_BUILD_ENV%        **** boost_1_54_0
-* git clone vle sources into %VLE_BUILD_ENV% **** dev
-* Install Mingw                              **** mingw-get-inst-20120426.exe
-* Install gtkmm                              **** gtkmm-win32-devel-2.22 .0-1.exe
-* Install gtksourcevieww                     **** gtksourceview-2.10.0.zip
-* Install cmake                              **** cmake-2.8.12-2
-* Install doxygen                            **** latest doxygen version 1.8.6
+* Download Boost into `%VLE_BUILD_ENV%`      (e.g. boost_1_54_0)
+* git clone vle sources into %VLE_BUILD_ENV% (e.g. dev)
+* Install Mingw                              (e.g. mingw-get-inst-20120426.exe)
+* Install gtkmm                              (e.g. gtkmm-win32-devel-2.22 .0-1.exe)
+* Install gtksourcevieww                     (e.g. gtksourceview-2.10.0.zip)
+* Install cmake                              (e.g. cmake-2.8.12-2)
+* Install doxygen                            (e.g. latest doxygen version 1.8.6)
 
 2.1) Download and install mingw : mingw-get-inst-20120426
 
@@ -201,7 +189,7 @@ Get dependencies and dowload vle:
 ** During install, install into the default directory C:\gtkmm
 ```
 
-2.4) Download boost_1_54_0.zip and unzip into %VLE_BUILD_ENV%\boost_1_54_0
+2.4) Download `boost_1_54_0.zip` and unzip into `%VLE_BUILD_ENV%\boost_1_54_0`
 
 2.5) Download doxygen-1.8.6 and install into the default installation directory
 
@@ -269,7 +257,7 @@ cpack.exe -G NSIS
 set PATH=%OLDPATH%
 ```
 
-### <a id="buildwin32cross"></a> Build for Win32 : cross compilation with MXE (not recommended, deprecated)
+# Build for Win32 : cross compilation with MXE (not recommended, deprecated)
 
 You should consider using the binaries of vle.
 
@@ -358,7 +346,7 @@ For users (recommended), generate a windows installer which can be exuted
 cpack -G NSIS
 ```
 
-For developpers only, we rely on a shared directory (in this example:
+For developers only, we rely on a shared directory (in this example:
 /cross/shared) between the linux host  and a windows virtual machine drive 
 (in this example: z:). 
 

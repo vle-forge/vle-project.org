@@ -7,12 +7,9 @@ title = "upgrade from vle 1.2 to vle 1.3"
 
 +++
 
-
-
-
 WARNING: The vle-1.3 is not yet released. This page is under construction.
 
-### Upgrade your package developped under vle-1.2
+# Upgrade your package developped under vle-1.2
 
 To update the packages developped with vle-1.2 :
 
@@ -20,7 +17,7 @@ To update the packages developped with vle-1.2 :
 * the modifications to perform on your package proposed here rely on the fact
 that you did not modified the mentioned files. 
 
-#### Update the cmake scripts. 
+## Update the cmake scripts. 
 
 a) In the directory `mypkg/cmake`, remove all files and add all files are 
 here: https://github.com/vle-forge/vle/tree/master/share/template/package/cmake. 
@@ -39,7 +36,7 @@ If you need to install hpp files you can add the following line:
 install(DIRECTORY . DESTINATION src FILES_MATCHING PATTERN "*.hpp")
 ```
 
-#### Update the cpp files into ``mypkg/src/``.
+## Update the cpp files into ``mypkg/src/``.
 
 a) In the directory `mypkg/src`, the cpp files which are VLE dynamics should
 have this header into cpp comments:
@@ -56,7 +53,7 @@ the current package (mypkg).
 For more documentation, take a look at the `VleUtilsConfig.cmake`
 file into `mypkg/cmake`.
 
-#### Update the file `mypkg/Description.txt`
+## Update the file `mypkg/Description.txt`
 
 The list of packages required to build all VLE dynamics (see tagdepends above) 
 must be given to fill the `Build-Depends` part.

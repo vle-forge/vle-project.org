@@ -7,7 +7,7 @@ title = "upgrade from vle 1.0.3 to vle 1.1"
 
 +++
 
-### Upgrade vle to vle 1.1
+# Upgrade vle to vle 1.1
 
 On linux: install missing packages, see the [building from source page](Get-vle-from-sources-for-vle-1.1). 
 Then install from sources.
@@ -16,14 +16,14 @@ On Win32, remove the `Mingw` and `CMake` software since they are now
 embedded into VLE, unless you use it for other applications. 
 And install vle-1.1.
 
-### Upgrade your package developped under vle-1.0.3
+# Upgrade your package developped under vle-1.0.3
 
 First of all you should save your package before trying to update it.
 The modifications to perform on your package proposed here rely on the fact that
 you did not modified the mentioned files. While updating these files, you should
 also take into account the modifications you performed.
 
-#### Update the cmake scripts. 
+## Update the cmake scripts. 
 
 a) In the directory `mypkg/cmake`, remove all files and add all files are here: 
 https://github.com/vle-forge/vle/tree/master1.1/share/template/package/cmake. 
@@ -53,7 +53,7 @@ DeclareDifferenceEquationDynamics(Mymodel "Mymodel.cpp")
 DeclareFsaDynamics(MymodelFsa "MymodelFsa.cpp")
 ```
 
-#### Update the cpp files into `mypkg/src/`
+## Update the cpp files into `mypkg/src/`
 
 a)  replace macros `DECLARE_NAMED_DYNAMICS` with `DECLARE_DYNAMICS`.
 Only one dynamic can be defined into a library. If you have more than one of
@@ -91,7 +91,7 @@ replace `#include <vle/extension/DifferenceEquation.hpp>`  with
 e) replace the call to `output.addEvent(evt)` by `output.push_back(evt)` 
 (mainly in Decision and Executive extensions) 
 
-#### Update the vpz files into  `mypkg/exp/`
+## Update the vpz files into  `mypkg/exp/`
 
 a) using a text editor, remove the xml tag for replicas,
 remove a line which looks like : 

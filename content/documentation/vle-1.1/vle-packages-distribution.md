@@ -27,20 +27,20 @@ The VLE packages provided by this distribution are :
 * vle.forrester : Forrester based modelisation (system dynamics)
 * vle.examples : some VLE examples and packages tests 
 
-### Install packages using the CLI option remote
+# Install packages using the CLI option remote
 
 ```bash
 vle --remote update
 vle --remote install vle.extension.difference-equation
 ```
 
-### Install packages by downloading the source code
+# Install packages by downloading the source code
 
 The URL of the distribution is : http://www.vle-project.org/pub/1.1/. 
 A global archive is also provided on the VLE website :
 [VLE 1.1 specific page](http://www.vle-project.org/vle-1.1).
 
-### Install packages using the package repository
+# Install packages using the package repository
 
 The source code is on a separate github repository:
 https://github.com/vle-forge/packages.

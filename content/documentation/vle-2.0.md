@@ -11,7 +11,7 @@ VLE2 uses the new kernel called [Echll](https://github.com/vle-forge/Echll) a
 C++14 tiny library to quicky develop DEVS, DTSS, DSDE and multicomponent
 simulators.
 
-## Quick start
+# Quick start
 
 With Echll, you can develop atomic and coupled model behaviour. For example, the
 classical [counter-generators]({{< ref "documentation/vle-2.0/counter.md" >}}) model. 

@@ -23,7 +23,7 @@ $VLE_HOME
   └─ vle.conf       ; the configuration file of VLE
 ```
 
-#### The VLE_HOME environment variable
+# The VLE_HOME environment variable
 
 VLE_HOME refers to the location of the VLE home directory. It can be set using
 the environment variable `VLE_HOME`. If the environment variable is not defined,
@@ -33,7 +33,7 @@ VLE uses the default path:
 * `$HOME/vle` on Win32 systems which corresponds to the variables: `%HOME%\vle`
 (eg. `c:\\users\\vle`).
 
-#### The content of pkgs-1.1 environment variable
+# The content of pkgs-1.1 environment variable
 
 The packages in `VLE_HOME/pkgs-1.1` are binaries of packages, they are
 automatically placed into this directory once a source package is built.
@@ -41,6 +41,6 @@ To compile a package see the [VLE application]({{< ref
 "documentation/vle-1.1/vle-cli.md">}}) and
 more precisely the commands `configure` and `build` in package mode.
 
-#### The configuration file
+# The configuration file
 
 The [vle.conf file](VLE-configuration-file-for-vle-1.1) contains the global settings for VLE. It allows for example to give the number of threads when building a package, or giving remote URL for downloading and installing packages.

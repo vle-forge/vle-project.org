@@ -13,16 +13,7 @@ to read VPZ, assign experimental conditions to the models, call the
 simulator, build experimental frames and capture result of simulation
 into matrix or dataframe.
 
-Table of content:
-
-* <a href="#usage">Usage</a>
-* <a href="#requirementsWin">Install requirements for rvle (Windows)</a>
-* <a href="#installWin">Install rvle for Windows</a>
-* <a href="#getcode">Get source code of rvle</a>
-* <a href="#installLinux">Install package for Linux</a>
-* <a href="#generatervle">Generate binary on Win32 (not recommended)</a>
-
-### <a id="usage"></a>Usage
+# Usage
 
 Documentation is included into the R package.
 
@@ -38,7 +29,7 @@ result <- rvle.run(f)
 checkEquals(class(result$view), "data.frame")
 ```
 
-### <a id="requirementsWin"></a> Install requirements for rvle (Windows)
+# Install requirements for rvle (Windows)
 
 * download [R](http://cran.rstudio.com/bin/windows/base/) and
   install it. You have to use the 32 bits application R i386.
@@ -52,7 +43,7 @@ checkEquals(class(result$view), "data.frame")
 install.packages("RUnit") #or use the menu 'Packages'
 ```
 
-### <a id="installWin"></a> Install rvle for Windows
+# Install rvle for Windows
 
 * you can get Win32 binary of rvle on the 
 [Download Page of vle-1.1](http://www.vle-project.org/vle-1.1)
@@ -60,7 +51,7 @@ install.packages("RUnit") #or use the menu 'Packages'
   zip file_.
 
 
-### <a id="getcode"></a> Get source code
+# Get source code
 
 An archive of source code can be found on the 
 [Download Page of vle-1.1](http://www.vle-project.org/vle-1.1) 
@@ -73,7 +64,7 @@ cd rvle/
 git checkout -b v1.1 origin/v1.1 
 ```
 
-### <a id="installLinux"></a> Install package for Linux
+# Install package for Linux
 
 * install R
 * install package RUnit
@@ -87,7 +78,7 @@ cd ..
 R CMD INSTALL rvle
 ```
 
-### <a id="generatervle"></a> Generate binary on Win32 (not recommended)
+# Generate binary on Win32 (not recommended)
 
 It is assumed that you used the standard procedure described [here] 
 ({{< relref "documentation/vle-1.1/installation.md#buildwin32" >}}) to build vle. 

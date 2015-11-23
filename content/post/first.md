@@ -7,7 +7,7 @@ title = "A new website"
 keywords = ["website"]
 +++
 
-Finally, we offer a new website that reponds our expectations. The
+Finally, we offer a new website that responds our expectations. The
 documentation, tutorials, and other details are being migrated.
 
 The [previous website] is still available.

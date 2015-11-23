@@ -6,7 +6,7 @@ keywords = ["devs", "atomic", "model"]
 title = "debug model"
 +++
 
-### Debugging Macros
+# Debugging Macros
 
 To debug your model, you may use the `DECLARE_DYNAMICSY_DBG` instead of
 `DECLARE_DYNAMICS` and use some functions (`TraceAlways`, `TraceModel` etc.) to

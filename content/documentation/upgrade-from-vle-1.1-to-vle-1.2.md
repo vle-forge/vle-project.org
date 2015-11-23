@@ -7,7 +7,7 @@ title = "upgrade from vle 1.1 to vle 1.2"
 
 +++
 
-### Upgrade your package developped under vle-1.1
+# Upgrade your package developped under vle-1.1
 
 To update the packages developped with vle-1.1 :
 
@@ -19,7 +19,7 @@ You can use the python script  `VLE_INSTALL_DIR/share/convert-vpz11-vpz12.py`
 or you can perfom manually the modifications listed below.
 
 
-#### Update the vpz files into  `mypkg/exp/`
+## Update the vpz files into  `mypkg/exp/`
 
 a) using a text editor, remove the xml tag for duration and begin, e.g: replace: 
 

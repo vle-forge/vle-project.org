@@ -6,8 +6,6 @@ keywords = ["devs", "atomic", "model", "counter", "generator"]
 title = "tuto 01"
 +++
 
-## First model
-
 In this first example, we will create simulation of two models: an event
 generator and a event counter. First, we need to create a new empty package in
 the user home directory.

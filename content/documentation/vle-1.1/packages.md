@@ -11,7 +11,7 @@ PDEVS models, VPZ files, documentations or data. The goal of the packages in VLE
 is to improve the development of big models and to facilitate the sharing of
 models and code.
 
-### Example of a package hierarchy
+# Example of a package hierarchy
 
 ```
 $mypackage
@@ -41,7 +41,7 @@ $mypackage
 A package or project in VLE have several directories and sub-directories.
 Although all files have their importance we will detail only the most important. 
 
-### The VPZ files into the exp directory (eg. mymodel.vpz)
+# The VPZ files into the exp directory (eg. mymodel.vpz)
 
 A VPZ file represents a model and the experiment associated to the model. It 
 can be simulated by [vle application]({{< ref 
@@ -51,7 +51,7 @@ the [gvle application]({{< ref "documentation/vle-1.1/gvle.md">}}). The XML
 structure of this file is detailed [here] ({{< ref 
 "documentation/vle-1.1/vpz-files-format.md">}}).
 
-### The Description.txt file
+# The Description.txt file
 
 The `Description.txt` gives the description of the project. You should fill it
 with detailed informations about your package. There is an example of a 
@@ -82,7 +82,7 @@ The `Build-Depends` should contain the list of packages you use (this time,
 without requiring them for the building process), typically it can be the
 vle.output package.
 
-### The cpp files into src directory (eg. mydynamics.cpp)
+# The cpp files into src directory (eg. mydynamics.cpp)
 
 If you have the most integrated mode of use of VLE (using modeling plug ins into
 [gvle]({{< ref "documentation/vle-1.1/gvle.md">}})), it is not required that
@@ -93,7 +93,7 @@ C++ class that inherits from `vle::devs::Dynacmis`. Moreover a macro such as
 `DECLARE_DYNAMICS` has to be used in order to declare the class mentioned 
 above to be a DEVS atomic model.
 
-### The CMakeLists.txt files 
+# The CMakeLists.txt files 
 
 Once again, if you have the most integrated mode of use of VLE, it is not
 required that you modify these files. 
@@ -104,7 +104,7 @@ the root directory declares the project and search for VLE includes and
 binaries. The `CMakeLists.txt` in `src/` declares the C++ target to compile and
 to install.
 
-### How to manipulate VLE packages
+# How to manipulate VLE packages
 
 In order to design the model the application [gvle application]({{< ref 
 "documentation/vle-1.1/gvle.md">}}) is required.

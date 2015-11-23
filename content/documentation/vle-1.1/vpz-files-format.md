@@ -3,22 +3,16 @@ categories = []
 date = "2015-11-21T17:49:27+01:00"
 description = ""
 keywords = []
-title = "vpz files format"
-
+title = "VPZ files format"
 +++
 
-The VPZ file uses a DTD (Document Type Definition) to define the syntax 
-(http://www.vle-project.org/vle-1.1.0.dtd). In this page we give an example of 
-VPZ file with some explanations. You should not modifyVPZ files unless you know
+The VPZ file uses a DTD (Document Type Definition) to define the syntax
+(http://www.vle-project.org/vle-1.1.0.dtd). In this page we give an example of
+VPZ file with some explanations. You should not modify VPZ files unless you know
 what you are doing. [GVLE]({{< ref "documentation/vle-1.1/gvle.md">}}) is the
 GUI application for editing these files.
 
-Table of content:
-
-* <a href="#vpzexample">Example of a VPZ file</a>
-* <a href="#vpzvalues">XML format for ``vle::value``</a>
-
-### <a id="vpzexample"></a> Example of a VPZ file
+# Example of a VPZ file
 
 Below is the declaration of the use of the vle DTD.
 
@@ -163,7 +157,7 @@ Three values are possible for the type : `timed|event|finish`
 </vle_project>
 ```
 
-### <a id="vpzvalues"></a> XML format for `vle::value`
+# XML format for `vle::value`
 
 VLE provides a set of classes for representing data in a polymorphic way. All these classes inherit ``vle::value::Value`` and there are used for DEVS external transitions, observations, experimental conditions and some plug-in. The XML syntax is:
 

@@ -7,8 +7,7 @@ title = "documentation"
 menu = "main"
 +++
 
-
-### Discrete Event Simulation platform
+# Discrete Event Simulation platform
 
 VLE is a multi-modeling and simulation platform. It is a powerful modeler and a
 simulator supporting the use of different formalisms for the specification of
@@ -29,7 +28,7 @@ VLE proposes a lot of formalisms called DEVS extensions:
 Based on the DEVS theory, we ensure the compatibility of models and DEVS
 extensions at formal and operational levels.
 
-### VLE as an environment
+# VLE as an environment
 
 VLE provides complete libraries named *VLE Foundation Libraries* (VFL) and tools
 for models design and simulation:
@@ -76,13 +75,13 @@ library](http://www.boost.org). The choices of C++, the GNU libraries and the
 concepts of components have made the VLE an efficient and portable environment,
 easily modifiable and fast to develop.
 
-### Specific documentation for each version
+# Specific documentation VLE 1.1, 1.3 and 2.0
 
 - [VLE 1.1]({{< ref "documentation/vle-1.1.md" >}}) stable version.
 - [VLE 1.3]({{< ref "documentation/vle-1.3.md" >}}) work in progress.
 - [VLE 2.0]({{< ref "documentation/vle-2.0.md" >}}) work in progress.
 
-### How to upgrade models
+# How to upgrade models
 
 - [upgrade from vle 1.0.3 to vle 1.1](
 {{< ref "documentation/upgrade-from-vle-1.0.3-to-vle-1.1.md" >}})
