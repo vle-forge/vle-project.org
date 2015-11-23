@@ -2,6 +2,10 @@
 <div class="content container">
   <div class="post">
     <h1>{{ .Title }}</h1>
+    <div id="toc" class="well col-md-4 col-sm-6">
+    {{ .TableOfContents }}
+    </div>
+    <hr />
     {{ .Content }}
   </div>
 </div>
