@@ -3,7 +3,7 @@ categories = ["tutorials", "c++"]
 date = "2015-09-28T12:03:41+02:00"
 description = ""
 keywords = ["devs", "atomic", "model", "counter", "generator"]
-title = "tuto 01"
+title = "Tutorial 01: counter-generator"
 +++
 
 In this first example, we will create simulation of two models: an event

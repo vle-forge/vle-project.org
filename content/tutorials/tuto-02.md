@@ -3,7 +3,7 @@ categories = ["tutorials", "c++"]
 date = "2015-11-11T21:13:05+01:00"
 description = ""
 keywords = ["devs", "atomic", "model", "lotka-volterra", "conditions"]
-title = "tuto 02"
+title = "Tutorial 02: Lotka-Volterra, observation and conditions"
 +++
 
 In this tutorial, we create a Lotka-Volterra system solved with Euler. The first
