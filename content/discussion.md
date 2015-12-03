@@ -12,7 +12,7 @@ server](http://www.freenode.net freenode). This channel requires no password.
 You can use any standard [IRC
 client](http://en.wikipedia.org/wiki/Internet_Relay_Chat) client:
 [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for Windows or
-Linux), [Adium](http://adium.aybee.net/) (for Mac OS X) or
+Linux), [Adium](http://adium.im/) (for Mac OS X) or
 [irssi](http://www.irssi.org/ irssi).
 
 The parameters to be configured are:
