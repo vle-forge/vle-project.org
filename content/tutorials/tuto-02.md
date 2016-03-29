@@ -1,8 +1,6 @@
 +++
-categories = ["tutorials", "c++"]
-date = "2015-11-11T21:13:05+01:00"
-description = ""
-keywords = ["devs", "atomic", "model", "lotka-volterra", "conditions"]
+topics = ["tutorial"]
+tags = ["vle-1.1", "c++", "atomic-model", "lotka-volterra", "conditions"]
 title = "Tutorial 02: Lotka-Volterra, observation and conditions"
 +++
 
@@ -66,7 +64,7 @@ public:
     {
         double dxdt = ((X * alpha) - (beta * X * Y));
         double dydt = (- (gamma * Y) + (delta * X * Y));
-    
+
         X += step * dxdt;
         Y += step * dydt;
     }
@@ -201,7 +199,7 @@ public:
     {
         double dxdt = ((X * alpha) - (beta * X * Y));
         double dydt = (- (gamma * Y) + (delta * X * Y));
-    
+
         X += step * dxdt;
         Y += step * dydt;
     }

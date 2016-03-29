@@ -1,8 +1,8 @@
 +++
-categories = ["tutorials", "c++"]
+topics = ["tutorial"]
 date = "2015-09-28T12:03:41+02:00"
 description = ""
-keywords = ["devs", "atomic", "model", "counter", "generator"]
+tags = ["vle-1.1", "c++", "atomic-model", "counter", "generator"]
 title = "Tutorial 01: counter-generator"
 +++
 

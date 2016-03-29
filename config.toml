@@ -1,50 +1,83 @@
 baseurl = "http://www.vle-project.org"
 languageCode = "en-us"
-title = "VLE, the Virtual Laboratory Environment, a Modeling & Simulation environment"
+title = "Virtual Laboratory Environment"
 MetaDataFormat = "toml"
-theme = "hyde-x"
+theme = "blackburn"
+canonifyurls = true
 paginate = 10
 
-[author]
-        name = "VLE"
-
-[permalinks]
-        post = "/blog/:year/:month/:day/:title/"
-
-[taxonomies]
-        category = "categories"
-	tag = "tags"
+[indexes]
+ tag="tags"
+ topic="topics"
 
 [params]
-        truncate = true
-        defaultDescription = "Virtual Laboratory Environment, a multiparadidm, multimodel simulation tool based on the DEVS formalism"
-        defaultKeywords = "vle, devs, rvle, pyvle, gauthier quesnel"
-        theme = "theme-base-0d"
-        highlight = "hybrid"
-        tagline = "*virtual laboratory environment*"
-        home = "blog"
-        github = "https://github.com/orgs/vle-forge/"
-        bitbucket = ""
-        linkedin = ""
-        googleplus = ""
-        facebook = "https://www.facebook.com/groups/vle.project/"
-        twitter = ""
-        youtube = ""
-        rss = true # switch to true to enable RSS icon link
-        #googleAuthorship = "Your Google+ profile ID"
-        #googleAnalytics = "Your Google Analytics tracking code"
-        gravatarHash = "ffcdf549ea8f80ea6c5c24bfb567d3f9"
-        #gravatarHash = "MD5 hash of your Gravatar email address"
-        # flattr = ""  # populate with your flattr uid
+ subtitle = "A Modeling & Simulation Environment"
+ brand = "VLE"
+ highlightjs = "androidstudio"
+ dateFormat = "02 Jan 2006, 15:04"
 
-## [[menu.main]]
-##     name = "about"
-##     pre = "<i class='fa fa-heart'></i>"
-##     weight = -110
-##     identifier = "about"
-##     url = "/about/"
-## [[menu.main]]
-##     name = "getting started"
-##     pre = "<i class='fa fa-road'></i>"
-##     weight = -100
-##     url = "/getting-started/"
+[menu]
+ [[menu.main]]
+  name = "Home"
+  pre = "<i class='fa fa-home fa-fw'></i>"
+  weight = 0
+  identifier = "home"
+  url = "/"
+ [[menu.main]]
+  name = "About"
+  pre = "<i class='fa fa-user fa-fw'></i>"
+  weight = 1
+  identifier = "about"
+  url = "/about/"
+ [[menu.main]]
+  name = "VLE 1.1 (stable)"
+  pre = "<i class='fa fa-download fa-fw'></i>"
+  weight = 2
+  identifier = "VLE 1.1"
+  url = "/vle-11/"
+ [[menu.main]]
+  name = "VLE 1.3 (dev.)"
+  pre = "<i class='fa fa-download fa-fw'></i>"
+  weight = 3
+  identifier = "VLE 1.3"
+  url = "/vle-13/"
+ [[menu.main]]
+  name = "Documentation"
+  pre = "<i class='fa fa-book fa-fw'></i>"
+  weight = 4
+  identifier = "documentation"
+  url = "/documentation/"
+ [[menu.main]]
+  name = "Tutorials"
+  pre = "<i class='fa fa-check-square-o fa-fw'></i>"
+  weight = 5
+  identifier = "Tutorials"
+  url = "/tutorials/"
+ [[menu.main]]
+  name = "Discussion"
+  pre = "<i class='fa fa-phone fa-fw'></i>"
+  weight = 6
+  identifier = "Discussion"
+  url = "/discussion/"
+ [[menu.main]]
+  name = "Posts"
+  pre = "<i class='fa fa-list fa-fw'></i>"
+  weight = 7
+  identifier = "post"
+  url = "/post/"
+ [[menu.main]]
+  name = "Topics"
+  pre = "<i class='fa fa-folder fa-fw'></i>"
+  weight = 8
+  identifier = "topic"
+  url = "/topics/"
+ [[menu.main]]
+  name = "Tags"
+  pre = "<i class='fa fa-tags fa-fw'></i>"
+  weight = 9
+  identifier = "tag"
+  url = "/tags/"
+    
+[social]
+ github = "vle-forge"
+ facebook = "groups/vle.project"

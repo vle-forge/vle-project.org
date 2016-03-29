@@ -1,8 +1,7 @@
 +++
-categories = []
-date = "2015-09-15T15:45:41+02:00"
+topics = ["license"]
 description = "License for the contents of this website and blog"
-keywords = ["license", "blog", "code"]
+tags = ["license", "blog", "code"]
 title = "license"
 +++
 

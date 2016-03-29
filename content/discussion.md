@@ -1,8 +1,6 @@
 +++
-date = "2015-09-18T10:38:07+02:00"
-draft = false
+topics = ["discussion"]
 title = "discussion"
-menu = "main"
 +++
 
 # IRC

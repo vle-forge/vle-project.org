@@ -1,10 +1,8 @@
 +++
-categories = ["website"]
+topics = ["website"]
 date = "2015-09-18T10:38:07+02:00"
-description = ""
-draft = false
 title = "A new website"
-keywords = ["website"]
+tags = ["website"]
 +++
 
 Finally, we offer a new website that responds our expectations. The

@@ -1,22 +1,19 @@
 +++
-categories = []
-date = "2015-09-15T10:50:29+02:00"
-description = ""
-keywords = []
-title = "tutorials"
-menu = "main"
+topics = ["tutorial"]
+tags = ["tutorial", "vle-1.1"]
+title = "Tutorials"
 +++
 
-These tutorials are made for the [version 1.1]({{< ref
-"documentation/vle-1.1.md" >}}) of VLE.
+These tutorials are made for the [version 1.1]({{< ref "vle-11.md" >}}) of VLE.
 
 # Classic tutorials
 
-- [First models]({{< ref "tutorials/tuto-01.md" >}}): create two models from
-  scratch and assign observation. Keywords: C++, package and observation.
-- [Lotka-Volterra]({{< ref "tutorials/tuto-02.md" >}}): create a simple Euler
-  model, assign observation and experiment conditions. Keywords: C++, package,
-  observation, conditions and RVLE.
+- [First models](tuto-01): create two models from scratch and assign
+  observation. Keywords: C++, package and observation.
+
+- [Lotka-Volterra](tuto-02): create a simple Euler model, assign observation and
+  experiment conditions. Keywords: C++, package, observation, conditions and
+  RVLE.
 
 # Forrester
 
@@ -29,4 +26,3 @@ shows how to use the Forrester extension:
   [Lotka Volterra equations](http://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equation).
 
 {{< youtube WAsqKIuIOqg >}}
-

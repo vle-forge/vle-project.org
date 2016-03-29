@@ -1,10 +1,7 @@
 +++
-categories = ["documentation", "c++", "atomic-model"]
-date = "2015-09-15T10:17:39+02:00"
-description = ""
-keywords = ["devs", "atomic", "model"]
+topics = ["documentation"]
+tags = ["devs", "vle"]
 title = "documentation"
-menu = "main"
 +++
 
 # Discrete Event Simulation platform
@@ -77,15 +74,6 @@ easily modifiable and fast to develop.
 
 # Specific documentation VLE 1.1, 1.3 and 2.0
 
-- [VLE 1.1]({{< ref "documentation/vle-1.1.md" >}}) stable version.
-- [VLE 1.3]({{< ref "documentation/vle-1.3.md" >}}) work in progress.
-- [VLE 2.0]({{< ref "documentation/vle-2.0.md" >}}) work in progress.
-
-# How to upgrade models
-
-- [upgrade from vle 1.0.3 to vle 1.1](
-{{< ref "documentation/upgrade-from-vle-1.0.3-to-vle-1.1.md" >}})
-- [upgrade from vle 1.1 to vle 1.2](
-{{< ref "documentation/upgrade-from-vle-1.1-to-vle-1.2.md" >}})
-- [upgrade from vle 1.2 to vle 1.3](
-{{< ref "documentation/upgrade-from-vle-1.2-to-vle-1.3.md" >}})
+- [VLE 1.1]({{< ref "vle-11.md" >}}) stable version.
+- [VLE 1.3]({{< ref "vle-13.md" >}}) work in progress.
+- [VLE 2.0]({{< ref "vle-20.md" >}}) work in progress.

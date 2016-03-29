@@ -1,8 +1,6 @@
 +++
-date = "2015-09-18T10:38:07+02:00"
-draft = false
-title = "about"
-menu = "main"
+topics = ["about"]
+title = "About"
 +++
 
 # The Virtual Laboratory Environment
@@ -31,7 +29,7 @@ Research).
 All publications leading to the availability of [VLE] and part of [VLE] usage
 are described in the [publications] page.
 
-{{< figure src="/media/gvle-1.1.2.png" title="GVLE 1.1.2 in action" >}}
+{{% fluid_img src="/media/gvle-1.1.2.png" caption="GVLE 1.1.2 in action" %}}
 
-   [VLE]: vle-details
-   [publications]: publications
+   [VLE]: /about/vle-details
+   [publications]: /about/publications
