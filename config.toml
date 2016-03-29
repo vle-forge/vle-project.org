@@ -14,7 +14,7 @@ copyright = "&copy; 2016 INRA"
 
 [params]
  subtitle = "A Modeling & Simulation Environment"
- brand = "<b>VLE</b><br><br><i>Virtual<br>Laboratory<br>Environment</i>"
+ brand = "VLE"
  highlightjs = "androidstudio"
  dateFormat = "02 Jan 2006, 15:04"
 
