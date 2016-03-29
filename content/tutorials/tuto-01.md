@@ -186,35 +186,35 @@ Now we need to add a new simulation file to assign the structure of the model
 (*counter* coupled with *generator*) and observation of the *counter*. First,
 start GVLE and open the *counter-generator* package.
 
-{{< figure src="/tutorials/images/tuto-00.png" caption="This is the default GVLE window at startup" >}}
+{{< fluid_img src="/tutorials/images/tuto-00.png" caption="This is the default GVLE window at startup" >}}
 
-{{< figure src="/tutorials/images/tuto-01.png" caption="Use the `file/open project` menu to open the select package dialog box" >}}
+{{< fluid_img src="/tutorials/images/tuto-01.png" caption="Use the `file/open project` menu to open the select package dialog box" >}}
 
-{{< figure src="/tutorials/images/tuto-02.png" caption="Open the empty.vpz file from the exp directory" >}}
+{{< fluid_img src="/tutorials/images/tuto-02.png" caption="Open the empty.vpz file from the exp directory" >}}
 
-{{< figure src="/tutorials/images/tuto-03.png" caption="Select the add model button and adds two models" >}}
+{{< fluid_img src="/tutorials/images/tuto-03.png" caption="Select the add model button and adds two models" >}}
 
-{{< figure src="/tutorials/images/tuto-04.png" caption="Assign a name to the output (out) and input (in) ports and make the connection" >}}
+{{< fluid_img src="/tutorials/images/tuto-04.png" caption="Assign a name to the output (out) and input (in) ports and make the connection" >}}
 
-{{< figure src="/tutorials/images/tuto-05.png" caption="Coupling between A and B must be draw" >}}
+{{< fluid_img src="/tutorials/images/tuto-05.png" caption="Coupling between A and B must be draw" >}}
 
-{{< figure src="/tutorials/images/tuto-06.png" caption="Add a new dynamics to the atomic dialog box with the right button." >}}
+{{< fluid_img src="/tutorials/images/tuto-06.png" caption="Add a new dynamics to the atomic dialog box with the right button." >}}
 
-{{< figure src="/tutorials/images/tuto-07.png" caption="In the dynamics dialog box, select the Counter library (generated from the Counter.cpp file)" >}}
+{{< fluid_img src="/tutorials/images/tuto-07.png" caption="In the dynamics dialog box, select the Counter library (generated from the Counter.cpp file)" >}}
 
-{{< figure src="/tutorials/images/tuto-08.png" caption="Finally select the Generator dynamics to the model A and do the same for the second model but with the Counter library" >}}
+{{< fluid_img src="/tutorials/images/tuto-08.png" caption="Finally select the Generator dynamics to the model A and do the same for the second model but with the Counter library" >}}
 
-{{< figure src="/tutorials/images/tuto-09.png" caption="Add a new view into the view dialog box. Set the view type to time-step 1.0. Each time-step, the view call the observation function of all observable (all atomic model with the specified observable" >}}
+{{< fluid_img src="/tutorials/images/tuto-09.png" caption="Add a new view into the view dialog box. Set the view type to time-step 1.0. Each time-step, the view call the observation function of all observable (all atomic model with the specified observable" >}}
 
-{{< figure src="/tutorials/images/tuto-10.png" caption="Add an observable to the model B and edit it with the right click" >}}
+{{< fluid_img src="/tutorials/images/tuto-10.png" caption="Add an observable to the model B and edit it with the right click" >}}
 
-{{< figure src="/tutorials/images/tuto-11.png" caption="Append the default view to the current observable" >}}
+{{< fluid_img src="/tutorials/images/tuto-11.png" caption="Append the default view to the current observable" >}}
 
-{{< figure src="/tutorials/images/tuto-12.png" caption="Start the experiment dialog box from the menu" >}}
+{{< fluid_img src="/tutorials/images/tuto-12.png" caption="Start the experiment dialog box from the menu" >}}
 
-{{< figure src="/tutorials/images/tuto-13.png" caption="In the experiment dialog box, increase the simulation's duration to 100.0" >}}
+{{< fluid_img src="/tutorials/images/tuto-13.png" caption="In the experiment dialog box, increase the simulation's duration to 100.0" >}}
 
-{{< figure src="/tutorials/images/tuto-14.png" caption="Finally, run the simulation into the simulation dialog box." >}}
+{{< fluid_img src="/tutorials/images/tuto-14.png" caption="Finally, run the simulation into the simulation dialog box." >}}
 
 Finally, to get results, show the directory `test_default.dat` in the `output`
 directory under GVLE. If you launch the simulation from GVLE, output are stored

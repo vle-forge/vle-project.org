@@ -103,27 +103,27 @@ As in the first tutorial, we need to add a new simulation file to assign the
 structure of the model and observation of the *X* and *Y* variables in the
 model. First, start GVLE and open the *LotkaVolterra* package.
 
-{{< figure src="/tutorials/images/tuto-02-00.png" caption="This is the default GVLE window at start-up." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-00.png" caption="This is the default GVLE window at start-up." >}}
 
-{{< figure src="/tutorials/images/tuto-02-01.png" caption="Open the VoltaVolterra package in menu file/open project." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-01.png" caption="Open the VoltaVolterra package in menu file/open project." >}}
 
-{{< figure src="/tutorials/images/tuto-02-02.png" caption="Open the exp/Empty.vpz file and add a atomic model with the add model button." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-02.png" caption="Open the exp/Empty.vpz file and add a atomic model with the add model button." >}}
 
-{{< figure src="/tutorials/images/tuto-02-03.png" caption="Normally, the structure of the model have only one model with no input/output port." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-03.png" caption="Normally, the structure of the model have only one model with no input/output port." >}}
 
-{{< figure src="/tutorials/images/tuto-02-04.png" caption="Attach a the dynamics to the model. Use the select tool, double-click on the atomic model you have created previously, go to the Dynamics tab and right click to add a new Dynamics." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-04.png" caption="Attach a the dynamics to the model. Use the select tool, double-click on the atomic model you have created previously, go to the Dynamics tab and right click to add a new Dynamics." >}}
 
-{{< figure src="/tutorials/images/tuto-02-05.png" caption="Do not forget to attach the Dynamics to the model." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-05.png" caption="Do not forget to attach the Dynamics to the model." >}}
 
-{{< figure src="/tutorials/images/tuto-02-06.png" caption="To get result of the simulation, we need to attach a View to the observation function on the observable X and Y (see the observation function in the model. So, select the View menu and create the view with a right button click and the add menu, then select a time step and use the File plug-in." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-06.png" caption="To get result of the simulation, we need to attach a View to the observation function on the observable X and Y (see the observation function in the model. So, select the View menu and create the view with a right button click and the add menu, then select a time step and use the File plug-in." >}}
 
-{{< figure src="/tutorials/images/tuto-02-07.png" caption="The use the select button to select the model, double click, select the observable menu, add a new observables, edit this observable (right click), add two observable X and Y, then attach the view to this observable." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-07.png" caption="The use the select button to select the model, double click, select the observable menu, add a new observables, edit this observable (right click), add two observable X and Y, then attach the view to this observable." >}}
 
-{{< figure src="/tutorials/images/tuto-02-08.png" caption="Select the Experiment menu to change the simulation duration." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-08.png" caption="Select the Experiment menu to change the simulation duration." >}}
 
-{{< figure src="/tutorials/images/tuto-02-09.png" caption="Start the simulation with the Launch Simulation menu." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-09.png" caption="Start the simulation with the Launch Simulation menu." >}}
 
-{{< figure src="/tutorials/images/tuto-02-10.png" caption="The result of the simulation is a file in the output directory of the package." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-10.png" caption="The result of the simulation is a file in the output directory of the package." >}}
 
 # Experimental condition
 
@@ -222,13 +222,13 @@ DECLARE_DYNAMICS(examples::SystemLotkaVolterra)
 
 In GVLE, use the *Conditions* sub-menu in the *Simulation* menu.
 
-{{< figure src="/tutorials/images/tuto-02-11.png" caption="The conditions dialogue box." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-11.png" caption="The conditions dialogue box." >}}
 
-{{< figure src="/tutorials/images/tuto-02-12.png" caption="Add a new condition and fill it with value. Use the right click to create condition, parameter and value." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-12.png" caption="Add a new condition and fill it with value. Use the right click to create condition, parameter and value." >}}
 
-{{< figure src="/tutorials/images/tuto-02-13.png" caption="Select the atomic model, switch to the conditions tabulation and select the previous created conditions and attach is to the atomic model." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-13.png" caption="Select the atomic model, switch to the conditions tabulation and select the previous created conditions and attach is to the atomic model." >}}
 
-{{< figure src="/tutorials/images/tuto-02-14.png" caption="You can rerun the simulation." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-14.png" caption="You can rerun the simulation." >}}
 
 # RVLE
 
@@ -236,7 +236,7 @@ First change the View plug-in into the View dialogue box and select the plug-in
 called *storage*. This plug-in allows simulation results to be send to R or
 Python.
 
-{{< figure src="/tutorials/images/tuto-02-15.png" caption="Here, update the output plug-in from File to Storage." >}}
+{{< fluid_img src="/tutorials/images/tuto-02-15.png" caption="Here, update the output plug-in from File to Storage." >}}
 
 Install RVLE and run the following commands:
 
