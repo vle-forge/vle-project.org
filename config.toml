@@ -1,4 +1,4 @@
-baseurl = "http://www.vle-project.org"
+baseurl = "http://www.vle-project.org/"
 languageCode = "en-us"
 title = "Virtual Laboratory Environment"
 MetaDataFormat = "toml"
