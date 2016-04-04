@@ -4,44 +4,36 @@ tags = ["vle-1.1", "download"]
 title = "vle 1.1"
 +++
 
-# Download
+## Download
 
-## VLE (includes VLE, GVLE, VFL)
+_VLE_ includes VLE (command line interface), GVLE (graphical user
+interface) and the VFL (full C++ API to model and to simulate). _RVLE_
+is the R package to bind (R)[https://www.r-project.org/] and
+VLE. _PyVLE_ is the python package to bind Python and VLE. Finally,
+_package_ is a lot of extensions and examples.
 
-| OS | URL |
-| ---| --- |
-| Windows | [vle-1.1.2-Windows.exe](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2-Windows.exe) |
-| Sources | [vle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2.tar.gz) |
+Windows (32bits binaries for Windows 7, 8, 10):
 
-## RVLE (R Package to bind R and VLE)
+- [vle-1.1.2-Windows.exe](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2-Windows.exe)
+- [rvle_1.1.2-0.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.zip)
+- [packages-1.1.2.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.zip)
 
-| OS | URL |
-| ---| --- |
-| Windows | [rvle_1.1.2-0.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.zip) |
-| Sources | [rvle_1.1.2-0.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.tar.gz) |
+Sources (See the the README files in all tarballs):
 
-## PyVLE (Python binding)
-
-| OS | URL |
-| ---| --- |
-| Sources | [pyvle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/pyvle-1.1.2.tar.gz) |
-
-## Packages (examples and extensions)
-
-| OS | URL |
-| ---| --- |
-| Windows | [packages-1.1.2.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.zip) |
-| Sources | [packages-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.tar.gz) |
-
-## Compiler support
-
-Operating Systems supported by VLE are Linux/Unix and Windows. Compilers used to
-build VLE and VLE Packages are :
-
-* g++ on Linux/Unix
-* mingw on windows
+* [vle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2.tar.gz)
+* [rvle_1.1.2-0.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.tar.gz)
+* [pyvle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/pyvle-1.1.2.tar.gz)
+* [packages-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.tar.gz)
 
 ## Requirements
+
+Operating Systems supported by VLE are Linux/Unix and
+Windows. Compilers used to build VLE and VLE Packages are :
+
+* g++/clang on Linux/Unix
+* Mingw32 on windows
+
+The dependencies are:
 
 * glibmm (>= 2.22)
 * libxml2 (>= 2.8)
@@ -53,7 +45,7 @@ build VLE and VLE Packages are :
 * any MPI 2 library as OpenMpi, mpich (for [mvle program](mvle))
 * gtkmm (>= 2.22.0) (for [gvle program](gvle)).
 
-# Release highlights
+## Changes from VLE 1.0
 
 - From VLE 1.1, the extension (FSA, Petri net, Difference Equation,
   etc.) are provided into packages. A package can provides simulators,
@@ -108,6 +100,6 @@ build VLE and VLE Packages are :
     value instead of the OutputMatrix of the Oov namespace. Add
     operator and, or, xor, equal and different between
     SimulationOptions and LogOptions to ensure correct type casting.
-- VPZ: Remove any reference to distant and local dynamics plugins and merge the
-  libgraph.
+- VPZ: Remove any reference to distant and local dynamics plugins and
+  merge the libgraph.
 - extension, geometry, eov and graph are removed.
