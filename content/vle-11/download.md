@@ -14,16 +14,14 @@ _package_ is a lot of extensions and examples.
 
 Windows (32bits binaries for Windows 7, 8, 10):
 
-- [vle-1.1.2-Windows.exe](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2-Windows.exe)
-- [rvle_1.1.2-0.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.zip)
-- [packages-1.1.2.zip](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.zip)
+- [vle-1.1.3-Windows.exe](http://www.vle-project.org/pub/vle/1.1/1.1.3/vle-1.1.3-Windows.exe)
+- [rvle_1.1.3-0.zip](http://www.vle-project.org/pub/vle/1.1/1.1.3/rvle_1.1.3-0.zip)
 
 Sources (See the the README files in all tarballs):
 
-* [vle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/vle-1.1.2.tar.gz)
-* [rvle_1.1.2-0.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/rvle_1.1.2-0.tar.gz)
-* [pyvle-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/pyvle-1.1.2.tar.gz)
-* [packages-1.1.2.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.2/packages-1.1.2.tar.gz)
+* [vle-1.1.3.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.3/vle-1.1.3.tar.gz)
+* [rvle_1.1.3-0.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.3/rvle_1.1.3-0.tar.gz)
+* [pyvle-1.1.3.tar.gz](http://www.vle-project.org/pub/vle/1.1/1.1.3/pyvle-1.1.3.tar.gz)
 
 ## Requirements
 
