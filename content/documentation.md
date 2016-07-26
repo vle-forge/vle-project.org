@@ -72,8 +72,8 @@ library](http://www.boost.org). The choices of C++, the GNU libraries and the
 concepts of components have made the VLE an efficient and portable environment,
 easily modifiable and fast to develop.
 
-# Specific documentation VLE 1.1, 1.3 and 2.0
+# Specific documentation VLE 1.1, 2.0 and 3.0
 
 - [VLE 1.1]({{< ref "vle-11.md" >}}) stable version.
-- [VLE 1.3]({{< ref "vle-13.md" >}}) work in progress.
 - [VLE 2.0]({{< ref "vle-20.md" >}}) work in progress.
+- [VLE 3.0]({{< ref "vle-30.md" >}}) work in progress.
