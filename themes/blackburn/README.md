@@ -7,6 +7,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 * Based on Yahoo's [Pure CSS] (http://purecss.io/) (v0.6.0)
 * Fixed sidebar with social links:
   * Twitter
+  * GNU social
   * Facebook
   * Google+
   * Weibo
@@ -24,6 +25,9 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * GitHub
   * Bitbucket
   * Stack Overflow
+  * Server Fault
+  * Last.fm
+  * Keybase
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
@@ -111,6 +115,7 @@ paginate = 10
 
   # SNS microblogging
   twitter = "*"
+  gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
   facebook = "*"
   googleplus = "*"
   weibo = "*"
@@ -136,6 +141,13 @@ paginate = 10
   github = "yoshiharuyamashita"
   bitbucket = "*"
   stackoverflow = "*"
+  serverfault = "*"
+
+  # Music
+  lastfm = "*"
+
+  # Other
+  keybase = "*"
 ```
 
 ## Usage
