@@ -2,12 +2,13 @@
 topics = ["documentation"]
 date = "2015-11-20T16:00:15+01:00"
 description = ""
-tags = ["vle-1.3","upgrade"]
-title = "upgrade from vle 1.2 to vle 1.3"
+tags = ["vle-2.0","upgrade"]
+title = "upgrade from vle 1.2 to vle 2.0"
 
 +++
 
-WARNING: The vle-1.3 is not yet released. This page is under construction.
+WARNING: The vle-2.0 is not yet released. This page is under
+construction.
 
 # Upgrade your package developped under vle-1.2
 

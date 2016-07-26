@@ -2,7 +2,7 @@
 topics = ["documentation"]
 date = "2015-11-20T15:53:52+01:00"
 description = ""
-tags = ["vle-1.3","upgrade"]
+tags = ["vle-2.0","upgrade"]
 title = "upgrade from vle 1.1 to vle 1.2"
 
 +++

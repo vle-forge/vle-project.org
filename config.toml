@@ -38,11 +38,11 @@ copyright = "&copy; 2016 INRA"
   identifier = "VLE 1.1"
   url = "/vle-11/"
  [[menu.main]]
-  name = "VLE 1.3 (dev.)"
+  name = "VLE 2.0 (dev.)"
   pre = "<i class='fa fa-download fa-fw'></i>"
   weight = 3
-  identifier = "VLE 1.3"
-  url = "/vle-13/"
+  identifier = "VLE 2.0"
+  url = "/vle-20/"
  [[menu.main]]
   name = "Documentation"
   pre = "<i class='fa fa-book fa-fw'></i>"
