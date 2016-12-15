@@ -32,23 +32,23 @@ copyright = "&copy; 2016 INRA"
   identifier = "about"
   url = "/about/"
  [[menu.main]]
-  name = "VLE 1.1 (stable)"
+  name = "Download"
   pre = "<i class='fa fa-download fa-fw'></i>"
   weight = 2
-  identifier = "VLE 1.1"
-  url = "/vle-11/"
- [[menu.main]]
-  name = "VLE 2.0 (dev.)"
-  pre = "<i class='fa fa-download fa-fw'></i>"
-  weight = 3
-  identifier = "VLE 2.0"
-  url = "/vle-20/"
+  identifier = "download"
+  url = "/download/"
  [[menu.main]]
   name = "Documentation"
   pre = "<i class='fa fa-book fa-fw'></i>"
-  weight = 4
+  weight = 3
   identifier = "documentation"
   url = "/documentation/"
+ [[menu.main]]
+  name = "Packages"
+  pre = "<i class='fa fa-folder fa-fw'></i>"
+  weight = 4
+  identifier = "packages"
+  url = "/packages/"
  [[menu.main]]
   name = "Tutorials"
   pre = "<i class='fa fa-check-square-o fa-fw'></i>"
@@ -79,7 +79,7 @@ copyright = "&copy; 2016 INRA"
   weight = 9
   identifier = "tag"
   url = "/tags/"
-    
+
 [social]
  github = "vle-forge"
  facebook = "groups/vle.project"
