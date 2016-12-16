@@ -30,6 +30,10 @@ clone it:
     git clone git://github.com/vle-forge/vle.git
     git checkout -b master-2.0 origin/master-2.0
 
+You can use the tarball too:
+
+    wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/vle-2.0.0-alpha1.tar.gz
+
 Install dependencies (recent ubuntu/debian):
 
     apt-get install libxml2-dev libboost-dev cmake pkg-config g++ \
