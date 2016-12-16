@@ -1,35 +1,24 @@
 +++
 topics = ["about"]
 title = "About"
+description = "What's VLE"
 +++
 
 # The Virtual Laboratory Environment
 
-[VLE][VLE] is a multi-modeling and simulation platform. It is a powerful
-modeler and a simulator supporting the use of different formalisms for the
-specification of models and implementing the corresponding solvers in a unified
-manner.
+[VLE](vle-details) is a multi-modelling and simulation platform. It is a
+powerful modeller and a simulator supporting the use of different formalisms
+for the specification of models and implementing the corresponding solvers in a
+unified manner.
 
-In addition to the classical use of one single formalism for modeling and
-simulation, [VLE][VLE] integrates, i.e. couples, heterogeneous formalisms in
-one coherent simulation model. [VLE][VLE] supports the new generation of inter-
-disciplinary simulation models…
+In addition to the classical use of one single formalism for modelling and
+simulation, [VLE](vle-details) integrates, i.e. couples, heterogeneous
+formalisms in one coherent simulation model. [VLE](vle-details) supports the
+new generation of inter- disciplinary simulation models…
 
-[VLE] is mainly used by the [RECORD](http://www6.inra.fr/record/) platform.
-RECORD is a platform of modeling and simulation of the agro-ecosystems. RECORD
-offers a set of software tools based on top of the [VLE][VLE] software suite.
-RECORD provides also  *webrecord* (web interface for models) and a library
-models. It is open to the community INRA and its partners. This project is
-supported by [Environnement & Agronomie](http://www.ea.inra.fr/en) and [Applied
-Mathematics and Informatics divisions](http://www.mia.inra.fr/en) of the
-[INRA](http://www.inra.fr/en) (French National Institute for Agricultural
-Research).
-
-# Discrete Event Simulation platform
-
-VLE is a multi-modeling and simulation platform. It is a powerful modeler and a
-simulator supporting the use of different formalisms for the specification of
-models and implementing the corresponding solvers in a unified manner.
+VLE is a powerful modeller and a simulator supporting the use of different
+formalisms for the specification of models and implementing the corresponding
+solvers in a unified manner.
 
 VLE proposes a lot of formalisms called DEVS extensions:
 
@@ -39,7 +28,7 @@ VLE proposes a lot of formalisms called DEVS extensions:
 - Finite State Automate: FD DEVS, UML State-chart, Moore and Mealy
 - High level Petri net
 - CellDEVS: cellular automata
-- CellQSS: association of CellDEVS and QSS for the resolution of spatialized
+- CellQSS: association of CellDEVS and QSS for the resolution of spatiality
   differential equation systems
 - Decision
 
@@ -51,13 +40,6 @@ extensions at formal and operational levels.
 VLE provides complete libraries named *VLE Foundation Libraries* (VFL) and
 tools for models design and simulation:
 
-- GVLE is a graphical user interface. It provides tools to visually construct a
-  hierarchy of coupled models. A modelling plug-in can be use to define and to
-  modify the behaviour of atomic models displaying a text editor where DEVS
-  functions can be coded. Moreover, GVLE enables the definition of experimental
-  frames. Results of the modeling activity (structure and dynamics of the
-  models) are stored in a particular XML format call VPZ (*Virtual laboratory
-  Project Zip*).
 - VLE is the core of the environment. The four other applications depend on VLE
   (that is why the name of this application is the same as the general
   framework). VLE implements the DEVS abstracts simulators and the extensions
@@ -66,6 +48,12 @@ tools for models design and simulation:
   and visualisation components of EOV and finally connect them to the DEVS-Bus.
   The Simulation plug-ins simulate the behaviours of the DEVS atomic models and
   VLE coordinates the simulation.
+- GVLE is a graphical user interface. It provides tools to visually construct a
+  hierarchy of coupled models. A modelling plug-in can be use to define and to
+  modify the behaviour of atomic models displaying a text editor where DEVS
+  functions can be coded. Moreover, GVLE enables the definition of experimental
+  frames. Results of the modelling activity (structure and dynamics of the
+  models) are stored in a particular XML format call VPZ.
 - RVLE (R for VLE) is a R-Package to build experimental frames, to edit VPZ, to
   launch the simulation and to get the results of the simulation within the R
   environment.
@@ -80,10 +68,10 @@ visualization component to use. Moreover, the modeller defines the initial
 conditions and the duration of the simulation. The modeller can define the
 variation domain for the initial parameters. Thereafter, VLE computes the
 number of simulations needed to achieve the experimental plan. The default
-behavior is an exhaustive experimental plan (i.e. the cross product of initials
-conditions). Starting from this stage, tools as RVLE and PyVLE are very useful
-since they provide tools to parameterize experimental designs, display results,
-edit VPZ.
+behaviour is an exhaustive experimental plan (i.e. the cross product of
+initials conditions). Starting from this stage, tools as RVLE and PyVLE are
+very useful since they provide tools to parametrize experimental designs,
+display results, edit VPZ.
 
 The VLE framework is written in the standardized C++ programming language. C++
 ensures the compatibility with a large number of operating systems and the
@@ -96,10 +84,20 @@ easily modifiable and fast to develop.
 
 # Publications
 
-All publications leading to the availability of [VLE] and part of [VLE] usage
-are described in the [publications] page.
+All publications leading to the availability of [VLE](vle-details) and part of
+[VLE](vle-details) usage are described in the [publications](publications)
+page.
+
+# Users
+
+[VLE] is mainly used by the [RECORD](http://www6.inra.fr/record/) platform.
+RECORD is a platform of modelling and simulation of the agro-ecosystems. RECORD
+offers a set of software tools based on top of the [VLE](vle-details) software
+suite. RECORD provides also  *webrecord* (web interface for models) and a
+library models. It is open to the community INRA and its partners. This project
+is supported by [Environment & Agronomy](http://www.ea.inra.fr/en) and [Applied
+Mathematics and Informatics divisions](http://www.mia.inra.fr/en) of the
+[INRA](http://www.inra.fr/en) (French National Institute for Agricultural
+Research).
 
 {{% fluid_img src="/media/gvle-1.1.2.png" caption="GVLE 1.1.2 in action" %}}
-
-   [VLE]: /about/vle-details
-   [publications]: /about/publications

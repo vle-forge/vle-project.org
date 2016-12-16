@@ -10,11 +10,11 @@ title = "Publications"
 
 Please use the following reference:
 
-Gauthier Quesnel, Raphaël Duboz, Éric Ramat, The Virtual Laboratory
-Environment – An operational framework for multi-modelling, simulation
-and analysis of complex dynamical systems, Simulation Modelling
-Practice and Theory, Volume 17, Issue 4, April 2009, Pages 641-653,
-ISSN 1569-190X, http://dx.doi.org/10.1016/j.simpat.2008.11.003.
+Gauthier Quesnel, Raphaël Duboz, Éric Ramat, The Virtual Laboratory Environment
+– An operational framework for multi-modelling, simulation and analysis of
+complex dynamical systems, Simulation Modelling Practice and Theory, Volume 17,
+Issue 4, April 2009, Pages 641-653, ISSN 1569-190X,
+http://dx.doi.org/10.1016/j.simpat.2008.11.003.
 
 ```bibtex
  @Article{quesnel09,
