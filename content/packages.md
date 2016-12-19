@@ -26,6 +26,7 @@ gvle.simulating.plot | GVLE's plot plug-in
 gvle.simulating.shape | GVLE's share plug-in
 vle.discrete-time | Discrete time modelling extension
 vle.examples | Lot of example
+[vle-adaptative-qss](vle-adaptative-qss) | QSS ordinary differential equation solver without coding
 vle.extension.celldevs | Cell DEVS modelling extension
 vle.extension.cellqss | Cell QSS modelling extension
 vle.extension.decision | Decision making modelling extension
