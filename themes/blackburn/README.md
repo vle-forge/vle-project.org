@@ -11,6 +11,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Facebook
   * Google+
   * Weibo
+  * Tumblr
   * Instagram
   * Flickr
   * Pinterest
@@ -26,7 +27,10 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Bitbucket
   * Stack Overflow
   * Server Fault
+  * Steam
+  * MobyGames
   * Last.fm
+  * Discogs
   * Keybase
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)
 * Web analytics by Google Analytics
@@ -40,7 +44,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Screenshots
 
-![screenshot](/images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/yoshiharuyamashita/blackburn/master/images/screenshot.png)
 
 ## Installation
 
@@ -61,7 +65,7 @@ See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more informati
 Example config.toml:
 
 ```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://www.example.com/"
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu
@@ -82,6 +86,10 @@ paginate = 10
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
+  # Include any custom CSS and/or JS files
+  # (relative to /static folder)
+  custom_css = ["css/my.css"]
+  custom_js = ["js/my.js"]
 
 [menu]
   # Shown in the side menu.
@@ -110,7 +118,7 @@ paginate = 10
     url = "/contact/"
 
 [social]
-  # Link your social networking accouns to the side menu
+  # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
   # SNS microblogging
@@ -119,6 +127,7 @@ paginate = 10
   facebook = "*"
   googleplus = "*"
   weibo = "*"
+  tumblr = "*"
 
   # SNS photo/video sharing
   instagram = "*"
@@ -143,8 +152,13 @@ paginate = 10
   stackoverflow = "*"
   serverfault = "*"
 
+  # Gaming
+  steam = "*"
+  mobygames = "*"
+
   # Music
   lastfm = "*"
+  discogs = "*"
 
   # Other
   keybase = "*"
@@ -162,6 +176,20 @@ paginate = 10
   weight = 2
   identifier = "about"
   url = "/about/"
+```
+
+* Override the theme by linking to custom CSS files:
+
+```toml
+[params]
+  custom_css = ["css/my.css"]
+```
+
+* Add new behaviours by linking to custom JS files:
+
+```toml
+[params]
+  custom_js = ["js/my.js"]
 ```
 
 ## Shortcodes
