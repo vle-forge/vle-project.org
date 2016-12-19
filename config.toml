@@ -32,51 +32,57 @@ copyright = "&copy; 2016 INRA"
   identifier = "about"
   url = "/about/"
  [[menu.main]]
+  name = "Success"
+  pre = "<i class='fa fa-user fa-fw'></i>"
+  weight = 2
+  identifier = "success"
+  url = "/success/"
+ [[menu.main]]
   name = "Download"
   pre = "<i class='fa fa-download fa-fw'></i>"
-  weight = 2
+  weight = 3
   identifier = "download"
   url = "/download/"
  [[menu.main]]
   name = "Documentation"
   pre = "<i class='fa fa-book fa-fw'></i>"
-  weight = 3
+  weight = 4
   identifier = "documentation"
   url = "/documentation/"
  [[menu.main]]
   name = "Packages"
   pre = "<i class='fa fa-folder fa-fw'></i>"
-  weight = 4
+  weight = 5
   identifier = "packages"
   url = "/packages/"
  [[menu.main]]
   name = "Tutorials"
   pre = "<i class='fa fa-check-square-o fa-fw'></i>"
-  weight = 5
+  weight = 6
   identifier = "Tutorials"
   url = "/tutorials/"
  [[menu.main]]
   name = "Discussion"
   pre = "<i class='fa fa-phone fa-fw'></i>"
-  weight = 6
+  weight = 7
   identifier = "Discussion"
   url = "/discussion/"
  [[menu.main]]
   name = "Posts"
   pre = "<i class='fa fa-list fa-fw'></i>"
-  weight = 7
+  weight = 8
   identifier = "post"
   url = "/post/"
  [[menu.main]]
   name = "Topics"
   pre = "<i class='fa fa-folder fa-fw'></i>"
-  weight = 8
+  weight = 9
   identifier = "topic"
   url = "/topics/"
  [[menu.main]]
   name = "Tags"
   pre = "<i class='fa fa-tags fa-fw'></i>"
-  weight = 9
+  weight = 10
   identifier = "tag"
   url = "/tags/"
 
