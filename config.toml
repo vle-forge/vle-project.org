@@ -33,7 +33,7 @@ copyright = "&copy; 2016 INRA"
   url = "/about/"
  [[menu.main]]
   name = "Success"
-  pre = "<i class='fa fa-user fa-fw'></i>"
+  pre = "<i class='fa fa-thumbs-o-up fa-fw'></i>"
   weight = 2
   identifier = "success"
   url = "/success/"
