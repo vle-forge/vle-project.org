@@ -116,6 +116,27 @@ make
 make install
 ```
 
+## Build on Ubuntu 16.04
+
+```bash
+# install the dependencies
+sudo apt-get install cmake g++ libgtkmm-2.4-dev libglademm-2.4-dev \
+  libgtksourceview2.0-dev libboost1.58-dev libboost-serialization1.58-dev \
+  libboost-date-time1.58-dev libboost-filesystem1.58-dev \
+  libboost-test1.58-dev libboost-regex1.58-dev \
+  libboost-program-options1.58-dev libboost-thread1.58-dev \
+  libboost-chrono1.58-dev libarchive-dev libqt4-dev
+# build vle
+cd vle
+mkdir build
+cd build
+cmake -DWITH_GTKSOURCEVIEW=ON -DWITH_GTK=ON -DWITH_CAIRO=ON -DWITH_MPI=OFF \
+      -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo              \
+      -DCMAKE_INSTALL_PREFIX=/usr ..
+make
+make install
+```
+
 # Building a Deb package (Ubuntu or Debian)
 
 Rather than installing directly the binaries and include, you can build a Debian
