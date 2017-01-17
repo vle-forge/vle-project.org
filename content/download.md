@@ -1,5 +1,5 @@
 +++
-tags = [ "Windows", "POSIX" ]
+tags = [ "MacOS", "Windows", "POSIX" ]
 topics = [ "Download"]
 description = "How to install VLE-2.0 ?"
 date = "2016-12-15T16:44:07+01:00"
@@ -13,7 +13,6 @@ title = "Download"
 | [OS X 10.10 or higher](apple) | [Linux](linux) | [Windows 7 or higher](windows) |
 
 </center>
-
 
 # Dependencies
 
@@ -60,6 +59,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
       -DWITH_GVLE=ON \
       -DWITH_CVLE=ON \
       -DWITH_MVLE=ON \
-      -DCMAKE_BUILD_TYPE=Releqse \
+      -DCMAKE_BUILD_TYPE=Release \
       ..
 ```
