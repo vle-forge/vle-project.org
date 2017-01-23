@@ -18,7 +18,7 @@ If you have already install VLE 1.0 or VLE 1.1, you may:
 # Installation of VLE
 
 First, download the installer from this website
-[vle-2.0.0-dev-x86.exe](http://vle- project.org/pub/2.0/vle-2.0.0-dev-x86.exe)
+[vle-2.0.0-alpha1.exe](http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/vle-2.0.0-alpha1.exe)
 (380 MB) and install VLE in a path without spaces. For example use `c:\vle-2.0`
 instead of the `c:\Program Files\vle-2.0`.
 

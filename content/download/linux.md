@@ -15,13 +15,13 @@ from this website.
 
     git clone git://github.com/vle-forge/vle.git
     cd vle
-    git checkout -b master-2.0 origin/master
+    git checkout -b master origin/master
 
 **With Wget or Curl**
 
     wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/vle-2.0.0-alpha1.tar.gz
     tar zxf vle-2.0.0-alpha1.tar.gz
-    cd vle
+    cd vle-2.0.0-alpha1
 
 # Install dependencies
 
@@ -56,7 +56,7 @@ use the following instructions.
 Once you have met requirements, compile and install VLE using the following
 command:
 
-    cd vle
+    cd vle-2.0.0-alpha1
     mkdir build
     cd build
     export QT_SELECT=qt5
