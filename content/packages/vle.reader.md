@@ -6,12 +6,6 @@ date = "2016-12-01T12:48:00+01:00"
 title = "vle.reader"
 +++
 
-# Table of Contents
-
-1. [Introduction](#Introduction)
-2. [Use case: read an entire file](#UseCase1)
-3. [Use case: read a file line by line](#UseCase2)
-
 # Introduction <a name="Introduction"></a>
 
 The vle package **vle.reader** provides functions for reading 2D table

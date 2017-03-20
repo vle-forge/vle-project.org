@@ -6,10 +6,6 @@ date = "2016-12-01T12:48:00+01:00"
 title = "vle.tester"
 +++
 
-# Table of Contents
-
-1. [Introduction](#Introduction)
-2. [Use case: declares unit tests on models](#UseCase1)
 
 # Introduction <a name="Introduction"></a>
 

@@ -21,6 +21,7 @@ Package | Description
 ext.lua | Allow the use of lua
 ext.muparser | Allow the use of muparser
 gvle.discrete-time | GVLE's Discrete time modelling extension
+gvle.forrester | GVLE's Forrester Diagrams extension (based on _vle.ode_)
 [vle.discrete-time](vle.discrete-time) | Discrete time modelling extension
 vle.examples | Lot of examples
 [vle.adaptative-qss](vle-adaptative-qss) | QSS ordinary differential equation solver without coding
