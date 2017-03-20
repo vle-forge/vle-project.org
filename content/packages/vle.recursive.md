@@ -6,14 +6,6 @@ date = "2016-12-01T12:48:00+01:00"
 title = "vle.recursive"
 +++
 
-# Table of Contents
-
-1. [Introduction](#Introduction)
-2. [Tutorial on vle.recursive package](#Tutorial)
-3. [The MetaManager API](#API)
-4. [The MetaManager dynamic](#dynamic)
-5. [Memory allocation performance tests](#perfs)
-
 # Introduction <a name="Introduction"></a>
 
 The package **vle.recursive** allows to perform recursive/embedded

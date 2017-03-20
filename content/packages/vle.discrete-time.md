@@ -6,13 +6,6 @@ date = "2016-12-01T12:48:00+01:00"
 title = "vle.discrete-time"
 +++
 
-# Table of Contents
-
-1. [Introduction](#Introduction)
-2. [Writing atomic models](#WritingAtomicModels)
-3. [Configuring atomic models](#ConfiguringAtomicModels)
-4. [Technical details](#TechnicalDetails)
-
 # Introduction <a name="Introduction"></a>
 
 The vle extension **vle.discrete-time** can be used to model and simulate 
