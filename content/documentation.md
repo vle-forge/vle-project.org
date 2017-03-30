@@ -69,11 +69,14 @@ is a [system plug-in](https://en.wikipedia.org/wiki/Library_(computing)) (*dll*
 or *so*) which is obtained from compiling a C++ code. Thus, it is necessary to
 know the part of the VLE's C++ API corresponding to the model or extension.
 
-API of the DEVS [Atomic model](atomic-model)  * [Counter](examples/counter), Generator.
+API of the
+DEVS [Atomic model](atomic-model), [Counter](examples/counter),
+Generator. API of the DEVS Executive model.
 
-API of the DEVS Executive model.
+How to [debug model](debug-model).
 
-How to [debug model](debug-model)
+Since VLE2, it is possible to develop VLE and GVLE with the [Qt Creator
+IDE](qtcreator).
 
 ---
 
