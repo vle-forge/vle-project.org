@@ -6,7 +6,7 @@ theme = "blackburn"
 canonifyurls = true
 paginate = 10
 author = "INRA"
-copyright = "&copy; 2016 INRA"
+copyright = "&copy; 2017 INRA"
 
 [indexes]
  tag="tags"
