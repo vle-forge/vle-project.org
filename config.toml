@@ -7,10 +7,10 @@ canonifyurls = true
 paginate = 10
 author = "INRA"
 copyright = "&copy; 2017 INRA"
-
-[indexes]
- tag="tags"
- topic="topics"
+pygmentsCodeFencesGuessSyntax = true
+pygmentsStyle = "monokai"
+pygmentsUseClasses = true
+PygmentsCodeFences = true
 
 [params]
  subtitle = "A Modeling & Simulation Environment"
@@ -73,12 +73,6 @@ copyright = "&copy; 2017 INRA"
   weight = 9
   identifier = "post"
   url = "/post/"
-# [[menu.main]]
-#  name = "Topics"
-#  pre = "<i class='fa fa-folder fa-fw'></i>"
-#  weight = 10
-#  identifier = "topics"
-#  url = "/topics/"
  [[menu.main]]
   name = "Tags"
   pre = "<i class='fa fa-tags fa-fw'></i>"
