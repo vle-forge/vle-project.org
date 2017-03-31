@@ -1,11 +1,8 @@
 +++
-tags = [
-]
-topics = [ "packages"
-]
-description = ""
+title = "Packages"
+tags = [ "packages" ]
+description = "Modularize Model Development"
 date = "2016-12-15T16:40:27+01:00"
-title = "packages"
 +++
 
 # Useful packages

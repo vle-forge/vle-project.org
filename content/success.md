@@ -1,6 +1,6 @@
 +++
 topics = [ "Success"]
-description = ""
+description = "Who use VLE?"
 date = "2016-12-19T09:56:54+01:00"
 title = "Companies & Projects Using VLE"
 tags = [ "RECORD"]

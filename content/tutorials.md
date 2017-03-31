@@ -2,6 +2,7 @@
 topics = ["tutorial"]
 tags = ["tutorial"]
 title = "Tutorials"
+description = "How to use the environment?"
 +++
 
 # Fibonacci with discrete time models

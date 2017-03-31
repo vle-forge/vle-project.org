@@ -1,7 +1,7 @@
 +++
 topics = ["about"]
 title = "About"
-description = "What, Why, Who, When, and How"
+description = "What, Why, Who, When, and How?"
 +++
 
 # The _Virtual Laboratory Environment_

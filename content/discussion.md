@@ -1,16 +1,16 @@
 +++
-topics = ["discussion"]
-title = "discussion"
+title = "Discussion"
+tags = ["discussion"]
+description = "How to discuss with developers or users?"
 +++
 
 # IRC
 
 The VLE project has an IRC channel available on the [Freenode
-server](http://www.freenode.net freenode). This channel requires no password.
-You can use any standard [IRC
-client](http://en.wikipedia.org/wiki/Internet_Relay_Chat) client:
-[Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for Windows or
-Linux), [Adium](http://adium.im/) (for Mac OS X) or
+server](http://www.freenode.net). This channel requires no password. You can
+use any standard [IRC client](http://en.wikipedia.org/wiki/Internet_Relay_Chat)
+client: [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for
+Windows or Linux), [Adium](http://adium.im/) (for Mac OS X) or
 [irssi](http://www.irssi.org/ irssi).
 
 The parameters to be configured are:
@@ -36,8 +36,8 @@ evolution, bug reports, features requests, etc. in French or English.
 Some remarks on the use of the VLE mailing lists:
 
 - Before sending an e-mail on a bugs report, a features request, please verify
-  that an answer does not exist in archives in the FAQ or on the rest of the web
-  site.
+  that an answer does not exist in archives in the FAQ or on the rest of the
+  web site.
 - Attachments are limited to 40 KB. If you want to send more important
   attachments, place the file(s) on a server and send the URL to the list.
 - Do not send e-mail in HTML format.

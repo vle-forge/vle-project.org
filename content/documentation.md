@@ -1,7 +1,7 @@
 +++
 topics = ["documentation"]
 tags = ["devs", "vle"]
-title = "Documentation"
+title = "Documentation "
 description = "VLE 2.0"
 +++
 
