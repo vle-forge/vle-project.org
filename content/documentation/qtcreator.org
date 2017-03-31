@@ -15,3 +15,5 @@ Be sure you have install libxml2 and the boost libraries and you may configure a
 ** Linux
 
 Under Linux, the default installation is done in the =$HOME/usr= prefix. To enable the use of the debugger, you may add a =make install= deployment pre-process and use the =$PREFIX/usr/bin/gvle= executable in the executable project settings.
+
+{{< fluid_img src="../qt-creator-00.png" caption="Initialize the debugger settings" >}}
