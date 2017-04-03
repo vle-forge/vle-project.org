@@ -16,7 +16,7 @@ complex dynamical systems, Simulation Modelling Practice and Theory, Volume 17,
 Issue 4, April 2009, Pages 641-653, ISSN 1569-190X,
 http://dx.doi.org/10.1016/j.simpat.2008.11.003.
 
-```bibtex
+```TeX
  @Article{quesnel09,
    author = {Gauthier Quesnel and Rapha\"el Duboz and
              \'Eric Ramat},
