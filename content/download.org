@@ -1,0 +1,68 @@
+#+DATE: 2016-12-15T16:44:07+01:00
+#+TITLE: Download
+#+TOPICS: documentation
+#+TAGS: MacOS Windows Posix
+#+DESCRIPTION: How to install VLE-2.0?
+
+* Binaries
+
+- [[apple][OSX 10.10+]
+- [[linux][Linux]]
+- Minimum [[windows][Windows 7+]]
+
+* Dependencies
+
+Strong dependencies:
+- libxml2 (≥ 2.8)
+- boost (≥ 1.47)
+- [[https://cmake.org/][CMake]] (≥ 3.0)
+- C++14 compiler (gcc ≥ 4.9, clang ≥ 3.3, intel icc (≥ 11.0)
+
+Optional MPI dependency for cluster:
+- Any MPI2 library sush as [[https://www.open-mpi.org/][OpenMpi]], [[https://www.mpich.org/][mpich]]
+
+Optional GVLE support:
+- [[https://doc.qt.io/qt-5/][Qt5]]
+- [[https://www.qt.io/ide/][Qt Creator IDE]]
+
+* Building options
+
+For each platform, building process can be controlled using arguments of [[https://cmake.org/][CMake]] line:
+
+| Options                  | Default value | Description                                                  |
+|--------------------------+---------------+--------------------------------------------------------------|
+| ~-DWITH_GVLE~            | ON            | Enable the building of GVLE based on QT5.                    |
+| ~-DWITH_TEST~            | ON            | Enable the compilation of unit tests.                        |
+| ~-DWITH_DOXYGEN~         | OFF           | Enable the compilation [[http://www.stack.nl/~dimitri/doxygen/][doxygen]] source documentation.         |
+| ~-DWITH_MVLE~            | OFF           | Enable the compilation of the old cluster experimental tool. |
+| ~-DWITH_CVLE~            | OFF           | Enable the compilation of the new cluster experimental tool. |
+| ~-DWITH_WIN32_INSTALLER~ | OFF           | Enable the building of the NSIS installer.                   |
+|--------------------------+---------------+--------------------------------------------------------------|
+
+* Examples
+
+- To build VLE, GVLE, CVLE and MVLE with heavy optimization flags GCC:
+
+#+BEGIN_SRC bash
+export CXXFLAGS=$(gcc -### -E - -march=native 2>&1 | sed -r '/cc1/!d;s/(")|(^.* - )|( -mno-[^\ ]+)//g')
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DWITH_GVLE=ON \
+      -DWITH_CVLE=ON \
+      -DWITH_MVLE=ON \
+      -DCMAKE_BUILD_TYPE=Release \
+      ..
+#+END_SRC
+
+- To build only VLE with debug flags with ~clang++~:
+
+#+BEGIN_SRC bash
+export CXX=clang++
+export CC=clang
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DCMAKE_BUILD_TYPE=Debug \
+      ..
+#+END_SRC
