@@ -14,9 +14,9 @@
 
 Strong dependencies:
 - libxml2 (≥ 2.8)
-- boost (≥ 1.47)
+- boost (≥ 1.49)
 - [[https://cmake.org/][CMake]] (≥ 3.0)
-- C++14 compiler (gcc ≥ 4.9, clang ≥ 3.3, intel icc (≥ 11.0)
+- C++14 compiler (gcc ≥ 5.0, clang ≥ 3.3, intel icc (≥ 11.0)
 
 Optional MPI dependency for cluster:
 - Any MPI2 library sush as [[https://www.open-mpi.org/][OpenMpi]], [[https://www.mpich.org/][mpich]]
@@ -48,6 +48,8 @@ export CXXFLAGS=$(gcc -### -E - -march=native 2>&1 | sed -r '/cc1/!d;s/(")|(^.* 
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
       -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DCMAKE_COLOR_MAKEFILE=ON \
+      -DCMAKE_VERBOSE_MAKEFILE=OFF \
       -DWITH_GVLE=ON \
       -DWITH_CVLE=ON \
       -DWITH_MVLE=ON \
@@ -63,6 +65,8 @@ export CC=clang
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
       -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DCMAKE_COLOR_MAKEFILE=ON \
+      -DCMAKE_VERBOSE_MAKEFILE=OFF \
       -DCMAKE_BUILD_TYPE=Debug \
       ..
 #+END_SRC
