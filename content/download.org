@@ -4,7 +4,18 @@
 #+TAGS: MacOS Windows Posix
 #+DESCRIPTION: How to install VLE-2.0?
 
-* Binaries
+* Sources and Binaries
+
+VLE is available as source (~src~ and needs to be compiled) or as binary (~bin~ and just be executed) dependently to your platform.
+
+| Name  | Details                    | Linux             | Windows 7+     | MacOSX 10.10+     |
+|-------+----------------------------+-------------------+----------------+-------------------|
+| VLE   | VFL, vle, gvle, mvle, cvle | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/vle-2.0.0-alpha2.tar.gz][tar.gz (src 885K)]] | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/vle-2.0.0-alpha2.exe][exe (bin 348M)]] | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/vle-2.0.0-alpha2.zip][zip (src 1.2M)]]    |
+| PyVLE | Python port                | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/pyvle-2.0.0-alpha2.tar.gz][tar.gz (src 86K)]]  | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/pyvle-2.0.0-alpha2.zip][zip (src 103K)]] | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/][zip (src 103K)]]    |
+| Rvle  | R port                     | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/rvle_2.0.0-2.tar.gz][tar.gz (src 101K)]] | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/rvle_2.0.0-2.zip][zip (bin 4.4M)]] | [[http://www.vle-project.org/pub/vle/2.0/2.0.0-alpha2/rvle_2.0.0-2.tar.gz][tar.gz (src 101K)]] |
+|-------+----------------------------+-------------------+----------------+-------------------|
+
+Installation details for each platform:
 
 - [[apple][OSX 10.10+]
 - [[linux][Linux]]
