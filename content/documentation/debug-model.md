@@ -15,6 +15,21 @@ Default, the debug file is located at `$VLE_HOME/vle-2.0.log` but it can be
 redirected to the standard output with the command line option `--log-to-
 stdout` or `--log-to-stderr`.
 
+Warning, in order to have the debug service available, make sure that vle
+is built with the debug option for example like this(Unix case):
+
+````bash
+cd vle-your_release
+mkdir build && cd build
+export QT_SELECT=qt5
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Debug ..
+
+make -j4
+make install
+make test
+````
+
 # Log model
 
 For example the following atomic model will show always the string "MyModel

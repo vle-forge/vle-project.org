@@ -58,6 +58,44 @@ explorer directly  in order to remove those directories.
 If you want to produce a compressed archive of your package in order to share
 it with others, you can call the command `vle -P mypackage package`.
 
+## The _verbose_ mode
+
+The _verbose_ mode of vle application `vle -V verbosity -P mypackage mymodel.vpz`
+is used to trace the simulator at run time. A typical use case of these commands is :
+
+`vle -V 7 -P mypackage mymodel.vpz`
+
+where you want to get as much as possible informations during the simulation.
+
+Verbosity levels are between 0 and 7, and the default is 3
+
+The level semantic is:
+
+* 0 system is unusable
+* 1 action must be taken immediately
+* 2 critial conditions
+* 3 error conditions
+* 4 warning conditions
+* 5 normal, but significant, condition
+* 6 informational message
+* 7 debug-level message
+
+Warning, in order to have the debug service available, make sure that vle
+is built with the debug option for example like this (Unix case):
+
+````bash
+cd vle-your_release
+mkdir build && cd build
+export QT_SELECT=qt5
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Debug ..
+
+make -j4
+make install
+make test
+````
+
+
 # The _remote_ mode
 
 The _remote_ mode of vle application `vle --remote` is used to download or
