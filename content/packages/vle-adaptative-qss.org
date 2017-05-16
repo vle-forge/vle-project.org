@@ -22,6 +22,7 @@ These packages provides generic models. You can use it directly without changing
 * Plot models
 
 This package shows at run-time of the simulation the output of atomic models into a [[http://www.gnuplot.info/][GNUPlot]] window or windows if several atomic models are used. Each input port is associated to a column data with the input port name as label. The dynamic have two optional parameters:
+
   - *gnuplot-duration* (double) :: Duration in second between two redraw of the [[http://www.gnuplot.info/][GNUPlot]] window. The default value is 0.3s.
   - *gnuplot-command* (string) :: The command to access the [[http://www.gnuplot.info/][GNUPlot]] executable. Default the ~gnuplot~ (or ~gnuplot.exe~) command is search in ~PATH~ environment variable.
 
