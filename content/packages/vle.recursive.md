@@ -8,9 +8,9 @@ title = "vle.recursive"
 
 # Introduction <a name="Introduction"></a>
 
-The package **vle.recursive** allows to perform recursive/embedded
-simulations. Based on the vle API, one can launch simulations 
-of a nested model into a vle Dynamics. It provides:
+The package **vle.recursive** allows to perform multi-simulations.
+Based on the vle API, one can launch simulations 
+of an embedded model into a vle Dynamics. It provides:
 
 * An API MetaManager for performing multi simulations
 * A dynamic based on this API that can be configured by experimental conditions
@@ -25,7 +25,7 @@ or native threading parallelization.
 * to facilitate the stochastic simulation.
 * to provide simple tools for aggregating simulation results.
 * to provide an alternative to multi simulation with R, with less memory
-allocation (see tests at the end).
+allocation.
 
 # Tutorial on vle.recursive package <a name="Tutorial"></a>
 
@@ -52,14 +52,14 @@ we also have a parameter 'seed' that gives the seed of the random number
 generator. Below, the result of the deterministic version with default
 paramters, for 60 integration time steps, are plotted into gvle.
 
-![MISSING FIG](http://www.vle-project.org/pub/1.3/docs/vle_recursive_SIR.png)
+{{% fluid_img src="../vle_recursive_SIR.png" caption="GVLE snapshot of the SIR model" %}}
 
  * Performing multiple simulations: we consider 5 different values of S(0) and
- for each, we compute the mean value of the finals state of S 
+ for each, we compute the mean value of the final states of S 
  for 6 replicates with different 'seed' values.
 
 
-```
+````c++
 namespace vr = vle::recursive;
 namespace vv = vle::value;
 vv::Map init;
@@ -100,14 +100,14 @@ if (err.code ==-1) {
 }
 std::cout << " Results of final S: " << *res << "\n";
 //(Sfinal, ((11.5526,22.2598,36.1712,51.3126,45.0968)))
-```
+````
 
 * Evaluating the model on observations: let us consider we have at our disposal
-three observations of the number of infectious subjects, at times 20, 30 and 40.
-And we want to compute the mean square error of the models for different values
-of beta.
+three observations of the number of infectious subjects, 
+at times 20, 30 and 40. And we want to compute the mean square error of the
+simulations for different values of beta.
 
-```
+````c++
 vv::Map init;
 init.addString("package","vle.recursive_test");
 init.addString("vpz","SIR.vpz");
@@ -140,7 +140,7 @@ if (err.code ==-1) {
 }
 std::cout << " Mse on I for beta in (0.001,0.002,0.003): " << *res << "\n";
 //(mseI, ((102.158,0.233604,228.278)))
-```
+````
 
 (code of the tutorial into vle.recursive_test)
 
@@ -150,37 +150,47 @@ The MetaManager is configured by a *vle::value::Map* provided by the user.
 It can contains:
 
 * **vpz** (string) : it gives the name of the *vpz* file. It allows to
- identify together with *package* the nested model.
+ identify together with *package* the embedded model.
 * **package** (string) : it gives the name of the *package* where is located
- the nested model. It allows to identify together with *vpz*
- the nested model.
+ the embedded model. It allows to identify together with *vpz*
+ the embedded model.
 * **propagate_X** (*value::Value*, optional) : where X is of the 
  form *condname.portname*, it specifies the value to set for all simulations
- to a port condition of the embedded simulator. 
-* **input_X** (*value::Value*): where X is of the form *condname.portname*,
-  it gives for one input the values to simulate. *value::Tuple* 
-  and *value::Set* are interpreted as multiple inputs.
-* **replicate_X** (*vle::value::Set* or *vle:value::Tuple*, optional) where X
+ to a port condition of the embedded model. 
+* **input_X** (*value::Set* or *value::Tuple*): where X is of the 
+ form *condname.portname*, it gives for one input the values to simulate.
+ The size of the *value::Set* or *value::Tuple* defines the number *N* of
+ combination inputs to simulate. For each input, it is required to have
+ the same value of *N*.
+* **replicate_X** (*value::Set* or *value::Tuple*, optional) where X
  is of the form *condname.portname*, it gives the values to simulate for the
- replicates (eg. seeds).
+ replicates (eg. seeds). The size of the *value::Set* or *value::Tuple* defines
+ the number *M* of replicates to simulate. For each input, it is required to have
+ the same value *M*. If no replicate is specified then *M=1*. Finally, the total
+ number of simulations performed is *N* * *M*. 
 * **output_Y** (vle::value::Map) : where Y is an id for the output. 
  The map should/could provide:
     * **path** (string): is of the form *viewname/pathOfTheAtomicModel.ObsPort*.
   It identifies the column of outputs *ObsPort* computed by the atomic
-  model *pathOfTheAtomicModel* and saved into the view *viewname*. 
-    * **integration** (amongst "last", "max", "mse" or "all", default "all"):
+  model *pathOfTheAtomicModel* and stored into the view *viewname*. 
+    * **integration** (amongst 'last', 'max', 'mse' or 'all', default 'last'):
   the type of temporal integration to perform.
   the output with id *X*. The string has the following form:
-    * **mse_observations** (*vle::value::Tuple*): required only if
-  integration="mse". It gives the series of observations for computing the MSE
-    * **mse_times** (*vle::value::Tuple*): required only if integration="mse".
-  It gives times at which the mse_observations are given (mse_observatiosn and
-  mse_times must have the same length.
-    * **aggregation_replicate** (amongst "mean", default "mean"):
-  It gives the type of aggregation to perform on the simulations replicates.
-    * **aggregation_input** (amongst "mean", "quantile", "max", "all"
-  default "all"): It gives the type of aggregation to perform on the
-  simulations inputs (once replicates have been aggregated).
+    * **aggregation_replicate** (amongst 'mean', 'variance', 'quantile', 
+  default 'mean'): It gives the type of aggregation to perform on the 
+  simulations replicates, once the temporal integration has been performed.
+    * **aggregation_input** (amongst 'mean', 'max', 'all'
+  default 'all'): It gives the type of aggregation to perform on the
+  simulations inputs, once replicates have been aggregated.
+    * **mse_times** (*value::Tuple*): required only if integration='mse'.
+  It gives times at which the mse_observations are given.
+    * **mse_observations** (*value::Tuple*): required only if
+  integration='mse'. It gives the serie of observations for computing the MSE.
+  mse_observations and mse_times must have the same length.
+    * **replicate_quantile** (*value::Double*): required only if 
+  aggregation_replicate='quantile'. It gives the quantile order to use for 
+  aggregating replicates.
+
 * **config_parallel_type** (string amongst *threads*, *mvle* and *single*;
  default *single*). It sets the type of parallelization to perform.
 * **config_parallel_rm_files** (bool; default *true*). Used only 
@@ -210,62 +220,11 @@ It can contains:
 
 Configuring the dynamic consists in giving the elements required for the API 
  configuration directly into conditions ports. Other configuration keys are:
+
  * **step_duration** (double, default 0). It gives the duration time, for 
  the embedding simulator engine clock, required for the simulation of the
  experiment plan. 
  
-# Memory allocation performance tests <a name="perfs"></a>
-
-First results show that we can expect 50 times less allocated memory using
-the MetaManager Dynamic embedded into a vpz (depending on the experiment). 
-Much of output simulation data is not converted into R structures.
-
-Script R directly based on the Rvle API for multi simulation:
-
-```
-set.seed(12369)
-n = 500;
-x1 = runif(n,0.0,2.0);
-x2 = runif(n,0.0,2.0);
-
-library(rvle)
-g = new("Rvle", pkg="vle.recursive_test", file ="ExBohachevsky.vpz")
-g = setDefault(g,
- outputplugin=c(view="vle.output/storage"),
- plan = "linear",
- cond.x1 = x1,
- cond.x2 = x2
-)
-system.time(gres <- results(run(g)))
-## user time=0.608, CPU time=0.028, real elapsed time=0.635
-print(object.size(gres))
-## 648200 bytes
-```
-
-Script R based on the vle.recursive R API:
-
-```
-set.seed(12369)
-n = 500;
-x1 = runif(n,0.0,2.0);
-x2 = runif(n,0.0,2.0);
-
-library(rvle)
-source(paste(Sys.getenv("VLE_HOME"), 
-       "/pkgs-2.0/vle.recursive/R/vle.recursive.R", sep=""))
-vle.recursive.init(pkg="vle.recursive_test", file="ExBohachevsky.vpz");
-vle.recursive.configInput(input="cond.x1", values=x1);
-vle.recursive.configInput(input="cond.x2", values=x2);
-vle.recursive.configOutput(id="y", 
-  path="view/ExBohachevsky:ExBohachevsky.y", integration="last")
-vle.recursive.configOutput(id="ynoise", 
-  path="view/ExBohachevsky:ExBohachevsky.y_noise", integration="last")
-
-system.time(fres <- vle.recursive.simulate())
-## user time=0.596, CPU time=0.008, real elapsed time=0.605
-print(object.size(fres))
-## 8952 bytes
-```
 
 
 
