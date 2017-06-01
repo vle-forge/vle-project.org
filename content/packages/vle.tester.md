@@ -43,20 +43,20 @@ _coupled:atomic.port_ from the view _view_ is a double and has the value
 Then you have to modify the file _test/test.cpp_ from your package
 with the following code :
 
-```
+````c++
 //@@tagtest@@
 #include <vle/tester/package_tester.hpp>
 VLE_UTILS_TEST("mypkg","test_file.txt");
-```
+````
 
 Finally compile your package and launch tests.
-It will perform unit tests located into : _mypkg/data/test_file.txt_
+It will perform unit tests located into : *mypkg/data/test_file.txt*
 Note that only one test file can be checked into test.cpp.
 
-```
+````bash
 vle -P mypkg configure build
 vle -P mypkg test
-```
+````
 
 To get full log, for each unit test, of the checking process,
 launch  the following executable : _./mypkg/buildvle/test/test_
