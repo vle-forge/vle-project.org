@@ -27,7 +27,7 @@ and the third contains strings:
 Use the following code to parse this file and convert values
 to vle::value::Value.
 
-```
+````c++
 #include <vle/reader/table_file_reader.hpp>
 #include <vle/utils/Package.hpp>
 
@@ -47,7 +47,7 @@ vr::TableFileReader tfr(
 vv::Matrix mat;
 tfr.readFile(mat);                            //(8)
 std::cout << mat << std::endl;
-```
+````
 
 The different steps of the above code do the following :
 ```
@@ -69,11 +69,11 @@ The different steps of the above code do the following :
 To read the file line by line, use the function _readLine_.
 Starting from the first use case, just replace step 8 by :
 
-```
+````c++
 ...
 vv::Set set;
 tfr.readLine(set);                        //(9)    
 std::cout << set << std::endl;
 tfr.readLine(set);                        //(10)    
 std::cout << set << std::endl;
-```
+````
