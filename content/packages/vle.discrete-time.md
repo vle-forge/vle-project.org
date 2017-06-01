@@ -36,7 +36,7 @@ _t - 2*D_.
 
 {{% fluid_img src="../userInterfaceDiscreteTime.png" caption="Behavior of temporal structures into discrete time models" %}}
 
-**Fig:** A discrete-time model with 6 variables, 3 can be
+**Fig:** A discrete-time atomic model with 6 variables, 3 can be
 updated from external event (inputs), 3 are sent by default at each time step 
 on the network (outputs)
 
@@ -96,7 +96,7 @@ For Vectors (struct _Vect_):
 Below is given an example of dynamic for an atomic model that relies 
 on the extension **vle.discrete-time**.
 
-``` 
+````c++
 class MyModel : public DiscreteTimeDyn
 {
 public:
@@ -104,8 +104,7 @@ public:
   Var x;
   Vect y;
   Var z; // used in this module as an input
-  MyModel(const vd::DynamicsInit& model, 
-          const vd::InitEventList& events) :
+  MyModel(const vd::DynamicsInit& model, const vd::InitEventList& events) :
             DiscreteTimeDyn(model, events)
   {
     //Initialisation of variables from experimental conditions
@@ -123,7 +122,7 @@ public:
     y[1] = y[0]() + 1;
   }
 };
-```
+````
 
 # Configuring atomic models <a name="ConfiguringAtomicModels"></a>
 
