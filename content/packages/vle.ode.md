@@ -40,7 +40,7 @@ Atomic model ports _Ei_ and _Vi_ can carry data at time _t_ that contain:
 Below is given an example of dynamic for an atomic model that relies 
 on the **vle.ode**
 
-```
+````c++
 class MyModel : public DifferentialEquation
 {
 public:
@@ -64,7 +64,7 @@ public:
  Var V1;
  Var E1;//considered here as external variable
 };
-```
+````
 
 # Configuring ODE atomics models <a name="ConfiguringAtomicModels"></a>
 
