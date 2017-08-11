@@ -8,12 +8,12 @@ title = "vle.discrete-time"
 
 # Introduction <a name="Introduction"></a>
 
-The vle extension **vle.discrete-time** can be used to model and simulate 
+The vle extension **vle.discrete-time** can be used to model and simulate
 discrete time atomic models into VLE. Discrete time atomic models are models
 that compute at time _t_ outputs of variables _v1, ..., vn_ taking into account
 values of variables _v1,..., vn_, given a user specified parameter _D_, at times
 
-_t, t - D, t - 2 * D,..._, 
+_t, t - D, t - 2 * D,..._,
 
 The packages related to this extension are:
 
@@ -30,17 +30,17 @@ mathematical formulation. These expressions must be written in the
 _compute_ function.
 
 For example the expression _V1 = V1(-1) + V2() + V3(-2)_ computes, at current
-time _t_, the value of _V1_ as the sum of the value of _V1_ at time 
-_t - D_, the current value of _V2_ and the value of _V3_ at time 
-_t - 2*D_. 
+time _t_, the value of _V1_ as the sum of the value of _V1_ at time
+_t - D_, the current value of _V2_ and the value of _V3_ at time
+_t - 2*D_.
 
 {{% fluid_img src="../userInterfaceDiscreteTime.png" caption="Behavior of temporal structures into discrete time models" %}}
 
 **Fig:** A discrete-time atomic model with 6 variables, 3 can be
-updated from external event (inputs), 3 are sent by default at each time step 
+updated from external event (inputs), 3 are sent by default at each time step
 on the network (outputs)
 
-The interface (input and output ports) is given for an example in the above 
+The interface (input and output ports) is given for an example in the above
 figure. Note that variables _v1, ..., v3_ are not necessary
 inputs they could also be outputs. And variables _v4, ..., v6_ could also
 have their input ports.
@@ -49,10 +49,10 @@ have their input ports.
 
 The _vle/discrete-time/TemporalValues.hpp_ API provides functionnalities
 to handle variables (double, vector or polymorphic _vle::value_) and their
-history. Particularly, access operators are defined for these data structures. 
+history. Particularly, access operators are defined for these data structures.
 Available variables types are :
 
-* double. To use a temporal value of type double, you must use the struct 
+* double. To use a temporal value of type double, you must use the struct
   _vle::discrete\_time::Var_ (see examples below).
 * vector of double. To use a temporal value of type vector of double,
     you must use the struct _vle::discrete\_time::Vect_.
@@ -61,8 +61,8 @@ Available variables types are :
 
 Temporal values maintain an historic of updates with dates and
 are browseable using access operator. Updates can be directly set
-by a _devs::Dynamic_ if the temporal value is declared 
-(in constructor or not) using the function _Var::init_, 
+by a _devs::Dynamic_ if the temporal value is declared
+(in constructor or not) using the function _Var::init_,
 _Vect::init_ or _ValueVle::init_ (see lines 13, 14 in code).
 
 {{% fluid_img src="../temporal_values.png"  caption="Behavior of temporal structures into discrete time models" %}}
@@ -74,8 +74,8 @@ of historic of _Var_ _S_ is:
 
  _[t1, a1],[t2, a3],[t3, a2],[t4, a1]_.
 
-Operator _()_ on _S_ will give one of the update value. The signal is 
-supposed to be piecewise constant function. Then 
+Operator _()_ on _S_ will give one of the update value. The signal is
+supposed to be piecewise constant function. Then
 
 * _S(-0.3)_ returns value at time _t - 0.3 * D_, ie _a1_.
 * _S(-3.6)_ returns value at time _t - 3.6 * D_, ie _a3_.
@@ -93,7 +93,7 @@ For Vectors (struct _Vect_):
 * _S\[2\]()_ returns last update vector at index 2.
 * _S\[2\]=1.5_ updates value of _S_ at dim 2 with 1.5.
 
-Below is given an example of dynamic for an atomic model that relies 
+Below is given an example of dynamic for an atomic model that relies
 on the extension **vle.discrete-time**.
 
 ````c++
@@ -126,8 +126,8 @@ public:
 
 # Configuring atomic models <a name="ConfiguringAtomicModels"></a>
 
-To configure discrete time atomic models, one can use the parameters from the 
-_vpz_ conditions listed below. The *X* refers to an internal variable 
+To configure discrete time atomic models, one can use the parameters from the
+_vpz_ conditions listed below. The *X* refers to an internal variable
 (a real, a vector or a vle value).
 
 Basic settings:
@@ -141,7 +141,7 @@ Basic settings:
 * **init_value_X** (vle::Value, default vle::Double(0.0)) :
   the initial value of the internal variable *X*. It can be a vv::Double for a
   variable without history, a vv::Tuple for a variable with history or a
-  vv::Table for a vector. Checks are performed with *dim_X* and 
+  vv::Table for a vector. Checks are performed with *dim_X* and
   *history_size_X*.
 * **syncs** (set of strings, default empty): each variable into this set are
   parameterized with a value of 1 for sync parameter.
@@ -189,11 +189,11 @@ Advanced settings for multiple update:
     should occur before the output function of the dynamic.
 
 Advanced settings for dynamic management of variables (this configuration can
-be dynamically set by an external event on port *dyn_init* with a map): 
+be dynamically set by an external event on port *dyn_init* with a map):
 
-* **dyn_allow** (bool, default false): if true, input ports added for example
-  by an executive are automatically added has state variables after the 
-  _compute_ function.
+* **dyn_allow** (bool, default false): if true, input and output ports added
+  for example by an executive are automatically added as state variables after
+  the_compute_ function.
 * **dyn_type** ('Var', 'Vect' or 'ValueVle', default 'Var'): gives the type
   of new state variables to add. Used only if  *dyn_allow* is true.
 * **dyn_sync** (uint, default 0): gives the type of synchronisation of new state
@@ -203,8 +203,15 @@ be dynamically set by an external event on port *dyn_init* with a map):
   true.
 * **dyn_dim** (uint, default 2): gives the dimension when creating a new _Vect_.
    Used only if *dyn_allow* is equal to true and *dyn_type* == _Vect_.
+* **dyn_denys** (set of strings, default empty): port names into this set are
+  not added as state variables, even if dynamic managment is allowed.
+* **dyn_allow_X** (bool, default true): if *sync_X* is true, if the port
+  named X exist, a variable of the name X can be added dynamically.
+  If *sync_X* is false, the port named X is not considered for dynamic
+  managment of variables. This option has priority on *dyn_denys*.
 
-Advanced settings for synchronisation: 
+
+Advanced settings for synchronisation:
 
 * **bags_to_eat** (int, default 0) : the number of bags to wait before
   computing the values of variables (calls of _compute_ user function).
@@ -214,7 +221,7 @@ Advanced settings for synchronisation:
 
 {{% fluid_img src="../dt_activity_diagram.png" caption="Diagram activity of discrete time models" %}}
 
-**Fig:** The activity diagram of a discrete time model: sequence of calls at 
+**Fig:** The activity diagram of a discrete time model: sequence of calls at
 a given time step.
 
 {{% fluid_img src="../DEVS_states.png" caption="DEVS state of disctrete time models" %}}
@@ -226,12 +233,11 @@ This extension is intended to improve the functionnalities of extension
 **vle.extension.difference-equation**, to improve perfomance results and to
 limit the behavior in order to facilitate the coupling with other extensions :
 
-* there is no propagation of the perturbation : 
+* there is no propagation of the perturbation :
   it requires a state backup and other extensions do not have this.
 * there is no initialization process of the dynamics (no _initValue_
   function): synchronisation at the time of instantiation of the atomic model
-  makes it difficult to couple with DSDEVS. 
-* there is no external variables. All variables are internal variables. 
+  makes it difficult to couple with DSDEVS.
+* there is no external variables. All variables are internal variables.
 * it provides vector of variables and polymorphic vle values.
 * It uses a DEVS state approah for the code of transitions
-
