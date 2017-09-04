@@ -7,8 +7,8 @@ description = "VLE 2.0"
 
 **Keywords**
 
-Concepts: [kernel](kernel), [packages](packages), [extensions](extensions),
-[distributions](distributions).
+Concepts: [devs](devs), [kernel](kernel), [packages](packages),
+[extensions](extensions), [distributions](distributions).
 
 Programs: [vle](vle-cli), [gvle](gvle), [rvle](rvle), [pyvle](pyvle).
 
