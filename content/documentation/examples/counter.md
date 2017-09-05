@@ -33,27 +33,27 @@ public:
         , m_counter(0),
     {}
 
-    virtual ~Counter() = default;
+    ~Counter() = default;
 
-    virtual vle::devs::Time init(vle::devs::Time& time) override
+    vle::devs::Time init(vle::devs::Time& time) override
     {
         return 0;
     }
 
-    virtual vle::devs::Time
+    vle::devs::Time
     timeAdvance() const override
     {
         return vle::devs::infinity;
     }
 
-    virtual void
+    void
     externalTransition(const vle::devs::ExternalEventList& events,
                        vle::devs::Time time) override
     {
         m_counter += events.size();
     }
 
-    virtual std::unique_ptr<vle::value::Value>*
+    std::unique_ptr<vle::value::Value>
     observation(const vle::devs::ObservationEvent& event) const override
     {
         return new vle::value::Double(m_counter);
@@ -63,7 +63,7 @@ private:
     std::size_t m_counter;
 };
 
-}}} // namespace vle examples counter
+} // namespace vle examples counter
 
 DECLARE_DYNAMICS(vle::example::Counter)
 ```
@@ -71,5 +71,5 @@ DECLARE_DYNAMICS(vle::example::Counter)
 Then build the package:
 
 ```bash
-vle -P example configure build
+vle-2.0 -P example configure build
 ```

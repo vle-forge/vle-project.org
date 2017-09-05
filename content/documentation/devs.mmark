@@ -91,3 +91,77 @@ $$... \rightarrow \{\lambda, \delta_{\text{int}}, \tau \} \rightarrow \{ \delta_
 * Finally, if an event arrives on an input port and the end of the internal events, the sequence of callback is:
 
 $$... \rightarrow \{\lambda, \delta_{\text{int}}, \tau \} \rightarrow \{ \lambda, \delta_{\text{con}}, \tau \} \rightarrow \{\lambda, \delta_{\text{int}}, \tau \} \rightarrow ...$$
+
+# DEVS and VLE
+
+VLE us a C++ implementation of the DEVS simulators. A model is a [C++ class](http://www.vle-project.org/doxygen/dev/da/d92/classvle_1_1devs_1_1Dynamics.html). To develop a model, you must inherit this class and use its API. For example, the type `vle::devs::Time` is a C++ double.
+
+```c++
+class MyModel : public vle::devs::Dynamics
+{
+public:
+MyModel(const DynamicsInit& init, const vle::devs::InitEventList&  events)
+    : vle::devs::Dynamics(init, events)
+{}
+
+~MyModel() override = default;
+
+// Process the initialization of the model by
+// initializing the initial state and return
+// the duration (or timeAdvance) of the initial
+// state.
+vle::devs::Time
+init(vle::devs::Time time) override
+{}
+
+// Process the output function: compute the output function.
+void
+output(vle::devs::Time time,
+       vle::devs::ExternalEventList& output) const override
+{}
+
+// Process the time advance function: compute the duration
+// of the current state.
+vle::devs::Time
+timeAdvance() const override
+{}
+
+// Process an internal transition: compute the new
+// state of the model with the internal transition function.
+void
+internalTransition(vle::devs::Time time) override
+{}
+
+// Process an external transition: compute the new state
+// of the model when an external event occurs.
+void
+externalTransition(const vle::devs::ExternalEventList& events,
+                   vle::devs::Time time) override
+{}
+
+// Process the confluent transition, by default,
+// confluentTransitions call internalTransition and
+// externalTransition but this function can be overridden
+// to develop its own dynamics.
+virtual void
+confluentTransitions(vle::devs::Time time,
+                     const vle::devs::ExternalEventList& events) override
+{}
+
+// Process an observation event: compute the current state
+// of the model at a specified time and for a specified port
+std::unique_ptr<vle::value::Value>
+observation(const vle::devs::ObservationEvent& event) const override
+{}
+
+// When the simulation of the atomic model is finished,
+// the finish method is invoked
+void finish() override
+{}
+
+}; // End of class definition
+
+// Finally, this macro enables the link between VLE, the shared library
+// produced by C++ compiler and your model.
+DECLARE_DYNAMICS(MyModel);
+```
