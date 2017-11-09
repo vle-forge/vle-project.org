@@ -1,7 +1,7 @@
 +++
 date = 2016-12-15T16:44:07+01:00
 title = "Download"
-topics = "documentation"
+topics = ["documentation"]
 tags = ["MacOS", "Windows", "Posix"]
 description = "How to install VLE-2.0?"
 markup = "mmark"
