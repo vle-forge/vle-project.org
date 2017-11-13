@@ -1,45 +1,97 @@
 +++
 description = "How to install VLE on MacOS X ?"
-date = "2016-12-19T11:13:52+01:00"
+date = "2017-11-13T10:47:32+01:00"
 title = "MacOS X Installation"
 tags = [ "macos", "apple"]
 topics = [ "VLE 2.0", "Installation" ]
 +++
 
-# Not alpha installation
+The installation of VLE 2.0 on MacOS requires to get and compile the source code
+of VLE 2.0. This process requires the use of [Homebrew](https://brew.sh/) to
+install the dependencies: git, CMake, Boost and QT5. Tests are made with the
+[Xcode application](https://developer.apple.com/xcode/) from the MacOS *App
+Store*. However, the Homebrew gcc compiler suite seems to work too.
+
+# First installation
+
+First time you install VLE 2.0. you need to install VLE's dependencies, get the
+source with Git, configure your environment the install VLE.
+
+## Install dependencies
 
 Install [Homebrew](http://brew.sh/). Open Terminal and copy/paste the following
-line and type enter.
+line and type enter:
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-Install [Xcode](https://developer.apple.com/xcode/) from the *App Store*
-application then copy the source tree from [Github](https://github.com/vle-
-forge) or from this website.
+Then, into the same Terminal, copy/paste the following line to install VLE's
+dependencies:
 
-With Git:
+```bash
+brew update
+brew upgrade
+brew install cmake boost pkgconfig qt5 git
+```
 
-    git clone git://github.com/vle-forge/vle.git
-    cd vle
-    git checkout -b master origin/master
+If you want to use `gcc` instead of the [Xcode
+application](https://developer.apple.com/xcode/) (available from the MacOS App
+Store), copy/aster the following line:
 
-With wget:
+```bash
+brew install gcc
+```
 
-    wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/vle-2.0.0-alpha1.tar.gz
-    tar zxf vle-2.0.0-alpha1.tar.gz
-    cd vle-2.0.0-alpha1
+## Get and build VLE
 
-Install dependencies:
+From the `$HOME/vle` path, we use git to download source code of VLE and install
+under the `$HOME/usr` path:
 
-    brew install cmake libboost-dev qt5
+```bash
+cd $HOME
+git clone git://github.com/vle-forge/vle.git
+cd vle
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$HOME/usr -DCMAKE_BUILD_TYPE=RelWithDebug ..
+make -j4
+make install
+```
 
-Once you have met requirements, compiling and installing is simple:
+## Configure the environment
 
-    cd vle
-    mkdir build
-    cd build
-    export QT_SELECT=qt5
-    cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=RelWithDebInfo ..
-    make -j4
-    make install
-    make test
+Into your `.bashrc` or equivalent:
+
+```bash
+export CMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.9.2
+export PATH=$PATH:$HOME/usr/bin:/usr/local/Cellar/qt/5.9.2/bin
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/usr/lib
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/usr/lib/pkgconfig:/usr/local/opt/qt/lib/pkgconfig
+```
+
+Now, you can use `vle-2.0` and `gvle-2.0` from the Terminal application.
+
+# Upgrade installation
+
+To upgrade installation, first update the Homebrew installation. In the Terminal
+application, copy/paste the following line et type enter:
+
+```bash
+brew update
+brew upgrade
+```
+
+The, go into the `vle` source directory, update the source with git then rebuild
+VLE:
+
+```bash
+cd $HOME/vle
+git pull -r
+rm -fr build
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$HOME/usr -DCMAKE_BUILD_TYPE=RelWithDebug ..
+make -j4
+make install
+```
