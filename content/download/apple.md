@@ -6,10 +6,11 @@ tags = [ "macos", "apple"]
 topics = [ "VLE 2.0", "Installation" ]
 +++
 
-The installation of VLE 2.0 on MacOS requires to get and compile the source code
-of VLE 2.0. This process requires the use of [Homebrew](https://brew.sh/) to
-install the dependencies: git, CMake, Boost and QT5. Tests are made with the
-[Xcode application](https://developer.apple.com/xcode/) from the MacOS *App
+The installation of VLE 2.0 on MacOS requires to get and compile the
+source code of VLE 2.0. This process requires the use of
+[Homebrew](https://brew.sh/) to install the dependencies: git, CMake,
+Boost and QT5. Tests are made with the [Xcode
+application](https://developer.apple.com/xcode/) from the MacOS *App
 Store*. However, the Homebrew gcc compiler suite seems to work too.
 
 # First installation
@@ -26,18 +27,18 @@ line and type enter:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Then, into the same Terminal, copy/paste the following line to install VLE's
-dependencies:
+Then, into the same Terminal, copy/paste the following lines to
+install VLE's dependencies:
 
 ```bash
 brew update
 brew upgrade
-brew install cmake boost pkgconfig qt5 git
+brew install cmake libxml2 boost pkgconfig qt5 git
 ```
 
 If you want to use `gcc` instead of the [Xcode
-application](https://developer.apple.com/xcode/) (available from the MacOS App
-Store), copy/aster the following line:
+application](https://developer.apple.com/xcode/) (available from the
+MacOS App Store), copy/paste the following line:
 
 ```bash
 brew install gcc
@@ -61,13 +62,21 @@ make install
 
 ## Configure the environment
 
-Into your `.bashrc` or equivalent:
+Into your `$HOME/.bashrc` or equivalent, write the following line:
 
 ```bash
 export CMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.9.2
 export PATH=$PATH:$HOME/usr/bin:/usr/local/Cellar/qt/5.9.2/bin
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/usr/lib
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/usr/lib/pkgconfig:/usr/local/opt/qt/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/usr/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig:/usr/local/opt/qt/lib/pkgconfig
+```
+
+Then into your `$HOME/.bash_profile`, add the following line if not present:
+```bash
+if [ -f $HOME/.bashrc ]
+then
+        source $HOME/.bashrc
+fi
 ```
 
 Now, you can use `vle-2.0` and `gvle-2.0` from the Terminal application.
