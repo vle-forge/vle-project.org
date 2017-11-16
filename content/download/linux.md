@@ -8,25 +8,32 @@ title = "POSIX installation"
 
 # Get the source
 
-VLE First, copy the source tree from [Github](https://github.com/vle-forge) or
-from this website.
+VLE First, copy or update the source tree from [Github](https://github.com/vle-
+forge).
 
 **With Git**
 
 ````bash
+cd $HOME
+
+# you never git clone vle, the use git clone:
 git clone git://github.com/vle-forge/vle.git
 cd vle
-git checkout -b master origin/master
+
+# else, just update vle from git:
+cd vle
+git pull -r
 ````
 
 **With Wget or Curl**
 
 ````bash
-wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/vle-2.0.0-alpha1.tar.gz
-tar zxf vle-2.0.0-alpha1.tar.gz
-cd vle-2.0.0-alpha1
+cd $HOME
+wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha2/vle-2.0.0-alpha2.tar.gz
+tar zxf vle-2.0.0-alpha2.tar.gz
+cd vle-2.0.0-alpha2
 ````
-    
+
 # Install dependencies
 
 ## Ubuntu 16.04 and Debian 8 *Jessie*
@@ -36,7 +43,7 @@ For [Ubuntu 16.04](http:://www.ubuntu.com) or [Debian GNU/Linux 8](http://www.de
 
 ````bash
 sudo apt-get update
-sudo apt-get install libxml2-dev libboost-dev cmake pkg-config g++ \
+sudo apt-get install curl libxml2-dev libboost-dev cmake pkg-config g++ \
             qttools5-dev qttools5-dev-tools qtbase5-dev qtbase5-dev-tools \
             qtchooser qt5-default
 ````
@@ -48,7 +55,7 @@ For the [Debian old](https://www.debian.org/releases/wheezy/), VLE 2 can compile
 
 ````bash
 sudo apt-get update
-sudo apt-get install libxml2-dev libboost-dev cmake pkg-config clang++ libc++-dev linv++abi-dev \
+sudo apt-get install curl libxml2-dev libboost-dev cmake pkg-config clang++ libc++-dev linv++abi-dev \
             qttools5-dev qttools5-dev-tools qtbase5-dev qtbase5-dev-tools \
             qtchooser qt5-default
 
@@ -66,7 +73,7 @@ use the following instructions.
 ````bash
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
-sudo apt-get install libxml2-dev libboost-dev cmake pkg-config g++ \
+sudo apt-get install curl libxml2-dev libboost-dev cmake pkg-config g++ \
      qttools5-dev qttools5-dev-tools qtbase5-dev qtbase5-dev-tools \
      qtchooser qt5-default g++-6 gcc-6 gcc-4.8 g++-4.8
 
@@ -81,7 +88,7 @@ Once you have met requirements, compile and install VLE using the following
 command:
 
 ````bash
-cd vle-2.0.0-alpha1
+cd vle                   # or cd vle-2.0.0-alpha2 is you use wget
 mkdir build && cd build
 export QT_SELECT=qt5
 
