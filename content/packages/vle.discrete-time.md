@@ -161,6 +161,8 @@ Advanced settings for output configurations:
   current time, otherwise it will gives the last updated value.
 * **output_nil_X** (bool, default false): a specific value of *output_nil*
   for variable *X*. This option has priority on *output_nil*.
+* **output_init** (bool, default false): if true, output is performed at
+  time of initialisation.
 
 Advanced settings for debugging:
 
