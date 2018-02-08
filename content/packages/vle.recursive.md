@@ -154,6 +154,11 @@ It can contains:
 * **package** (string) : it gives the name of the *package* where is located
  the embedded model. It allows to identify together with *vpz*
  the embedded model.
+* **define_X** (*value::Boolean*, optional) : where X is of the form
+ *condname.portname*. If true, the port *portname* of the condition *condname*
+ will be added to the embedded model. If false, it will be removed. This action
+ is perfomed before taking into account propagate, input and replicate
+ paremeters (see below).
 * **propagate_X** (*value::Value*, optional) : where X is of the 
  form *condname.portname*, it specifies the value to set for all simulations
  to a port condition of the embedded model. 
