@@ -29,9 +29,9 @@ git pull -r
 
 ````bash
 cd $HOME
-wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha2/vle-2.0.0-alpha2.tar.gz
-tar zxf vle-2.0.0-alpha2.tar.gz
-cd vle-2.0.0-alpha2
+wget http://vle-project.org/pub/vle/2.0/2.0.0-beta1/vle-2.0.0-beta1.tar.gz
+tar zxf vle-2.0.0-beta1.tar.gz
+cd vle-2.0.0-beta1
 ````
 
 # Install dependencies
@@ -88,7 +88,7 @@ Once you have met requirements, compile and install VLE using the following
 command:
 
 ````bash
-cd vle                   # or cd vle-2.0.0-alpha2 is you use wget
+cd vle                   # or cd vle-2.0.0-beta1 is you use wget
 mkdir build && cd build
 export QT_SELECT=qt5
 
