@@ -13,7 +13,8 @@ More details on the [VLE 2.0](../../vle-20) page. [Binary and source package](..
 
 ## VLE and VFL
 
-Gauthier Quesnel (37):
+### Gauthier Quesnel (37)
+
 - vle: add new preprocessor variables to enable/disable debug
 - macx: improves the MacOS X port
 - utils: fix unix findInstallPrefix function
@@ -52,7 +53,8 @@ Gauthier Quesnel (37):
 - win32: removed the use of CPack + NSIS
 - vpz: fixed a conversion error
 
-Patrick Chabrier (18):
+### Patrick Chabrier (18)
+
 - gvle: fix the port tag management
 - gvle: fix the build and the install of the project
 - gvle: add XML attributes order consistency
@@ -72,10 +74,12 @@ Patrick Chabrier (18):
 - cvle: fix the man installation
 - vle: fix the usage of "qmake -query"
 
-Raphaël Duboz (1):
+### Raphaël Duboz (1)
+
 - Add std::functional header to compile with gcc 7.2.
 
-Ronan Trépos (18):
+### Ronan Trépos (18)
+
 - gvle: fix the removing of model port
 - gvle: set status log editable
 - gvle: fix the build and the install of the project
@@ -95,7 +99,8 @@ Ronan Trépos (18):
 - devs: in Executive, add debug param to createModel
 - vpz: add a function to test existence of a port
 
-Éric Casellas (3):
+### Éric Casellas (3)
+
 - pkgs: fix Builder mask parameter misuse in vle.generic.builder
 - translator: fix missing mask empty cell detection in functions apply_mask and apply_wrap_mask
 - pkgs: fix Builder generator misuse in vle.generic.builder
