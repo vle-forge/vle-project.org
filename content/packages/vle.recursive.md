@@ -196,16 +196,18 @@ It can contains:
   aggregation_replicate='quantile'. It gives the quantile order to use for 
   aggregating replicates.
 
-* **config_parallel_type** (string amongst *threads*, *mvle* and *single*;
+* **config_parallel_type** (string amongst *threads*, *cvle* and *single*;
  default *single*). It sets the type of parallelization to perform.
-* **config_parallel_rm_files** (bool; default *true*). Used only 
- if *config_parallel_type* is set to *mvle*. Simulation files created into
- directory *working_dir* are removed after analysis.
+* **config_parallel_spawn** (bool; default *false*). If true, each simulation
+ is launched in a sub process.
 * **config_parallel_nb_slots** (int > 0). it gives the number of slots to
  use for parallelization.
+* **config_parallel_rm_files** (bool; default *true*). Used only 
+ if *config_parallel_type* is set to *cvle*. Simulation files created into
+ directory *working_dir* are removed after analysis.
 * **working_dir** (string). Required only if *config_parallel_type* is set 
- to *mvle*. It gives the working directory where are produced result file of single
- simulations.
+ to *cvle*. It gives the working directory where are produced result file of
+ single simulations.
 
 
 # The MetaManager dynamic <a name="dynamic"></a>
