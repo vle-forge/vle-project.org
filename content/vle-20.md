@@ -146,5 +146,5 @@ respectively define a `vle::devs::Executive` or a
 
 # C++ API
 
-The [C++ API documentations](http://www.vle-project.org/doxygen/dev/)
+The [C++ API documentations](http://www.vle-project.org/doxygen/master/)
 are daily generated from the source code.

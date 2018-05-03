@@ -79,11 +79,11 @@ develop:
 
 ## API
 
-The [C++ API documentations](http://www.vle-project.org/doxygen/1.1/) are daily
-generated from the source code. With VLE, a model or an [extension] is a system
-plug-in (*dll* or *so*) which is obtained from compiling a C++ code. Thus, it is
-necessary to know the part of the VLE's C++ API corresponding to the model or
-extension.
+The [C++ API documentations](http://www.vle-project.org/doxygen/master1.1/) are
+daily generated from the source code. With VLE, a model or an [extension] is a
+system plug-in (*dll* or *so*) which is obtained from compiling a C++ code.
+Thus, it is necessary to know the part of the VLE's C++ API corresponding to
+the model or extension.
 
 - API of the DEVS [Atomic model]
   * [Counter], Generator.
