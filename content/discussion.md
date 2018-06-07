@@ -4,6 +4,20 @@ tags = ["discussion"]
 description = "How to discuss with developers or users?"
 +++
 
+# Mailing lists
+
+The mailing lists are the heart of the VLE community. This list is oriented
+toward casual users of the VLE libraries, model developers or VLE developers.
+It is a good place to start if you are having trouble getting started with VLE
+or its individual package. Feel free to post both "newbie" and more challenging
+questions. You can also post very technical, and oriented toward VLE library
+developers. It is also read by many other members interested in watching the
+VLE library development process. Virtually all VLE decisions, major or minor,
+technical or otherwise, are reached via public discussion on this mailing list.
+
+Subscribe or unsubscribe at the [VLE list home
+page](https://groupes.renater.fr/sympa/info/vle).
+
 # IRC
 
 The VLE project has an IRC channel available on the [Freenode
@@ -11,7 +25,7 @@ server](http://www.freenode.net). This channel requires no password. You can
 use any standard [IRC client](http://en.wikipedia.org/wiki/Internet_Relay_Chat)
 client: [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for
 Windows or Linux), [Adium](http://adium.im/) (for Mac OS X) or
-[irssi](http://www.irssi.org/ irssi).
+[irssi](http://www.irssi.org/irssi).
 
 The parameters to be configured are:
 
@@ -19,25 +33,3 @@ The parameters to be configured are:
 - Port: 8001 (or 6667 If the first one does not work)
 - Channel: #vle
 - Encoding: UTF-8 (preferably)
-
-# Mailing lists
-
-Via the [Sourceforge](http://www.sourceforge.net/projects/vle) web site, we have
-created a set of _mailing lists_ for the discussions on VLE generally, its
-evolution, bug reports, features requests, etc. in French or English.
-
-- [vle-users](http://lists.sourceforge.net/lists/listinfo/vle-users): for any
-  users.
-- [vle-devel](http://lists.sourceforge.net/lists/listinfo/vle-devel): for
-  developers of VLE and advanced users.
-- [vle-news](http://lists.sourceforge.net/lists/listinfo/vle-news): only mails
-  about new version of VLE.
-
-Some remarks on the use of the VLE mailing lists:
-
-- Before sending an e-mail on a bugs report, a features request, please verify
-  that an answer does not exist in archives in the FAQ or on the rest of the
-  web site.
-- Attachments are limited to 40 KB. If you want to send more important
-  attachments, place the file(s) on a server and send the URL to the list.
-- Do not send e-mail in HTML format.
