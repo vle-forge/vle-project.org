@@ -100,14 +100,12 @@ make test
 ````
 
 If you install VLE outside `/usr` like above, you must define these
-variables into your `.bashrc` or equivalent:
+variables into your `.bashrc` or equivalent. For example, with
+`prefix=/usr/local`:
 
 ````bash
-export prefix=/usr/local
-cmake -DCMAKE_INSTALL_PREFIX=$prefix ..
-
-export PATH=$prefix/bin
-export LD_LIBRARY_PATH=$prefix/lib
-export MANPATH=$prefix/man
-export PKG_CONFIG_PATH=$prefix/lib/pkgconfig
+export PATH=/usr/local/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+export MANPATH=/usr/local/man
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ````
