@@ -45,7 +45,7 @@ For [Ubuntu 16.04](http:://www.ubuntu.com) or [Debian GNU/Linux 8](http://www.de
 sudo apt-get update
 sudo apt-get install curl libxml2-dev libboost-dev cmake pkg-config g++ \
             qttools5-dev qttools5-dev-tools qtbase5-dev qtbase5-dev-tools \
-            qtchooser qt5-default
+            qtchooser qt5-default libqt5svg5-dev
 ````
 
 ## Debian 7 *Wheezy*
