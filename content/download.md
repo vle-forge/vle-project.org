@@ -14,9 +14,9 @@ VLE is available as source (`src` and needs to be compiled) or as binary (`bin` 
 
 | Name  | Details                    | Linux                                                                                             | Windows 7+                                                                                   | MacOSX 10.10+                                                                                |
 |-------|----------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| VLE   | VFL, vle, gvle, mvle, cvle | [tar.gz (src 885K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/vle-2.0.0-beta1.tar.gz)  | [exe (bin 348M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/Setup-VLE_2_0_0-beta1.exe)   | [zip (src 1.2M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/vle-2.0.0-beta1.zip)   |
-| PyVLE | Python port                | [tar.gz (src 86K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/pyvle-2.0.0-beta1.tar.gz) | [zip (src 103K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/pyvle-2.0.0-beta1.zip) | [zip (src 103K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/pyvle-2.0.0-beta1.zip)                       |
-| Rvle  | R port                     | [tar.gz (src 101K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/rvle_2.0.0-3.tar.gz)     | [zip (bin 4.4M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/rvle_2.0.0-3.zip)       | [tar.gz (src 101K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta1/rvle_2.0.0-3.tar.gz) |
+| VLE   | VFL, vle, gvle, mvle, cvle | [tar.gz (src 885K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/vle-2.0.0-beta2.tar.gz)  | [exe (bin 348M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/Setup-VLE_2_0_0-beta2.exe)   | [zip (src 1.2M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/vle-2.0.0-beta2.zip)   |
+| PyVLE | Python port                | [tar.gz (src 86K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/pyvle-2.0.0-beta2.tar.gz) | [zip (src 103K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/pyvle-2.0.0-beta2.zip) | [zip (src 103K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/pyvle-2.0.0-beta2.zip)                       |
+| Rvle  | R port                     | [tar.gz (src 101K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/rvle_2.0.0-4.tar.gz)     | [zip (bin 4.4M)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/rvle_2.0.0-4.zip)       | [tar.gz (src 101K)](http://www.vle-project.org/pub/vle/2.0/2.0.0-beta2/rvle_2.0.0-4.tar.gz) |
 
 Installation details for each platform:
 
@@ -55,7 +55,6 @@ For each platform, building process can be controlled using arguments of [CMake]
 | `-DWITH_DOXYGEN`         | OFF           | Enable the compilation [doxygen](http://www.stack.nl/~dimitri/doxygen/) source documentation. |
 | `-DWITH_MVLE`            | OFF           | Enable the compilation of the old cluster experimental tool.                                  |
 | `-DWITH_CVLE`            | OFF           | Enable the compilation of the new cluster experimental tool.                                  |
-| `-DWITH_WIN32_INSTALLER` | OFF           | Enable the building of the NSIS installer.                                                    |
 
 Examples
 ========
