@@ -29,9 +29,9 @@ git pull -r
 
 ````bash
 cd $HOME
-wget http://vle-project.org/pub/vle/2.0/2.0.0-beta1/vle-2.0.0-beta1.tar.gz
-tar zxf vle-2.0.0-beta1.tar.gz
-cd vle-2.0.0-beta1
+wget http://vle-project.org/pub/vle/2.0/2.0.0/vle-2.0.0.tar.gz
+tar zxf vle-2.0.0.tar.gz
+cd vle-2.0.0
 ````
 
 # Install dependencies
