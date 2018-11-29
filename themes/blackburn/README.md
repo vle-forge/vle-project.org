@@ -95,8 +95,8 @@ paginate = 10
   custom_js = ["js/my.js"]
 
   [params.piwikAnalytics]
-    siteID = 2
-    piwikRoot = "//analytics.example.com/"
+    siteid = 2
+    piwikroot = "//analytics.example.com/"
 
 [menu]
   # Shown in the side menu.
@@ -187,21 +187,34 @@ paginate = 10
   url = "/about/"
 ```
 
-* Override the theme by linking to custom CSS files:
+* Override the theme by linking to custom CSS files or URLs:
 
 ```toml
 [params]
   custom_css = ["css/my.css"]
 ```
 
-* Add new behaviours by linking to custom JS files:
+* Add new behaviours by linking to custom JS files or URLs:
 
 ```toml
 [params]
-  custom_js = ["js/my.js"]
+  custom_js = ["js/my.js", "https://cdnjs.cloudflare.com/ajax/libs/zooming/1.4.2/zooming.min.js"]
 ```
 
 ## Shortcodes
+
+### pure_table
+```
+{{< pure_table
+  "columnName1|columnName2|...|columnName99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "... and so on"
+>}}
+```
+
+where each positional parameter is separated by the vertical bar (i.e., |). The resulting `<table>` is set to have `class="pure-table pure-table-striped"`.
 
 ### fluid_imgs
 
