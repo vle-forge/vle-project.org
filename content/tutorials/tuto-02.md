@@ -1,14 +1,14 @@
 +++
 topics = ["tutorial"]
-tags = ["vle-1.1", "c++", "atomic-model", "lotka-volterra", "conditions"]
-title = "Tutorial 02: Lotka-Volterra, observation and conditions"
+tags = ["vle-2.0", "c++", "atomic-model", "lotka-volterra", "conditions"]
+title = "C++ Lotka-Volterra"
 +++
 
-In this tutorial, we create a Lotka-Volterra system solved with Euler. The first
-part shows you how to develop a such model then we use the experimental
+In this tutorial, we create a Lotka-Volterra system solved with Euler. The
+first part shows you how to develop a such model then we use the experimental
 conditions to assign value from the VPZ and use it directly from R.
 
-# First, we develop the model
+## First, we develop the model
 
 ```
 vle -P lotka-volterra create
@@ -69,13 +69,13 @@ public:
         Y += step * dydt;
     }
 
-    virtual vv::Value* observation(
+    virtual std::unique_ptr<vv::Value> observation(
             const vd::ObservationEvent& event) const
     {
         if (event.onPort("X"))
-            return new vle::value::Double(X);
+            return vle::value::Double(X);
         else if (event.onPort("Y"))
-            return new vle::value::Double(Y);
+            return vle::value::Double(Y);
         else
             return vle::devs::Dynamics::observation(event);
     }
@@ -204,12 +204,13 @@ public:
         Y += step * dydt;
     }
 
-    virtual vv::Value* observation(const vd::ObservationEvent& event) const
+    virtual std::unique_ptr<vv::Value> observation(
+        const vd::ObservationEvent& event) const
     {
         if (event.onPort("X"))
-            return new vle::value::Double(X);
+            return vle::value::Double(X);
         else if (event.onPort("Y"))
-            return new vle::value::Double(Y);
+            return vle::value::Double(Y);
         else
             return vle::devs::Dynamics::observation(event);
     }
@@ -230,7 +231,7 @@ In GVLE, use the *Conditions* sub-menu in the *Simulation* menu.
 
 {{< fluid_img src="/tutorials/images/tuto-02-14.png" caption="You can rerun the simulation." >}}
 
-# RVLE
+## RVLE
 
 First change the View plug-in into the View dialogue box and select the plug-in
 called *storage*. This plug-in allows simulation results to be send to R or

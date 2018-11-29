@@ -1,9 +1,9 @@
 +++
+title = "C++ counter-generator"
 topics = ["tutorial"]
 date = "2015-09-28T12:03:41+02:00"
 description = ""
-tags = ["vle-1.1", "c++", "atomic-model", "counter", "generator"]
-title = "Tutorial 01: counter-generator"
+tags = ["vle-2.0", "c++", "atomic-model", "counter", "generator"]
 +++
 
 In this first example, we will create simulation of two models: an event
@@ -118,47 +118,46 @@ class Generator : public vd::Dynamics
     : vd::Dynamics(init, events)
     {}
 
-    virtual ~Generator()
-    {}
+    ~Generator() override = default;
 
-    virtual vd::Time init(const vd::Time& /*time*/)
+    vd::Time init(const vd::Time& /*time*/) override
     {
         return 0.1;
     }
 
-    virtual void output(const vd::Time& /*time*/,
-    vd::ExternalEventList& output) const
+    void output(const vd::Time& /*time*/,
+    vd::ExternalEventList& output) override const
     {
         output.push_back(new vle::devs::ExternalEvent("out"));
     }
 
-    virtual vd::Time timeAdvance() const
+    vd::Time timeAdvance() const override
     {
         return 0.1;
     }
 
-    virtual void internalTransition(const vd::Time& /*time*/)
+    void internalTransition(const vd::Time& /*time*/) override
     {}
 
-    virtual void externalTransition(
+    void externalTransition(
         const vd::ExternalEventList& /*event*/,
-        const vd::Time& /*time*/)
+        const vd::Time& /*time*/) override
     {}
 
-    virtual void confluentTransitions(const vd::Time& time,
-        const vd::ExternalEventList& events)
+    void confluentTransitions(const vd::Time& time,
+        const vd::ExternalEventList& events) override
     {
         internalTransition(time);
         externalTransition(events, time);
     }
 
-    virtual vv::Value* observation(
-        const vd::ObservationEvent& /*event*/) const
+    std::unique_ptr<vv::Value> observation( override
+        const vd::ObservationEvent& /*event*/) override const
     {
         return 0;
     }
 
-    virtual void finish()
+    void finish() override
     {}
 };
 

@@ -1,8 +1,12 @@
 baseurl = "https://www.vle-project.org/"
 languageCode = "en-us"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+hasCJKLanguage = true
 title = "Virtual Laboratory Environment"
 MetaDataFormat = "toml"
-theme = "blackburn"
+theme = "hugo-theme-techdoc"
 canonifyurls = true
 paginate = 10
 author = "INRA"
@@ -13,18 +17,19 @@ pygmentsUseClasses = true
 PygmentsCodeFences = true
 
 [params]
- subtitle = "A Modeling & Simulation Environment"
+ description = "A Modeling & Simulation Environment"
+ github_repository = "https://github.com/vle-forge/"
+ github_doc_repository = "https://github.com/vle-forge/vle-project.org"
+ version = "2.0.2"
  brand = "VLE"
  highlightjs = "androidstudio"
  dateFormat = "02 Jan 2006, 15:04"
+ menu_exclusion = ["archives", "post", "posts"]
 
-[menu]
  [[menu.main]]
   name = "Home"
-  pre = "<i class='fa fa-home fa-fw'></i>"
-  weight = 1
-  identifier = "home"
   url = "/"
+  weight = 1
  [[menu.main]]
   name = "About"
   pre = "<i class='fa fa-user fa-fw'></i>"
@@ -32,54 +37,33 @@ PygmentsCodeFences = true
   identifier = "about"
   url = "/about/"
  [[menu.main]]
-  name = "Success"
-  pre = "<i class='fa fa-thumbs-o-up fa-fw'></i>"
-  weight = 3
-  identifier = "success"
-  url = "/success/"
- [[menu.main]]
   name = "Download"
   pre = "<i class='fa fa-download fa-fw'></i>"
-  weight = 4
+  weight = 3
   identifier = "download"
   url = "/download/"
  [[menu.main]]
   name = "Documentation"
   pre = "<i class='fa fa-book fa-fw'></i>"
-  weight = 5
+  weight = 4
   identifier = "documentation"
   url = "/documentation/"
  [[menu.main]]
   name = "Packages"
   pre = "<i class='fa fa-folder fa-fw'></i>"
-  weight = 6
+  weight = 5
   identifier = "packages"
   url = "/packages/"
  [[menu.main]]
   name = "Tutorials"
   pre = "<i class='fa fa-check-square-o fa-fw'></i>"
-  weight = 7
+  weight = 6
   identifier = "Tutorials"
   url = "/tutorials/"
  [[menu.main]]
   name = "Discussion"
   pre = "<i class='fa fa-phone fa-fw'></i>"
-  weight = 8
+  weight = 7
   identifier = "Discussion"
   url = "/discussion/"
- [[menu.main]]
-  name = "Posts"
-  pre = "<i class='fa fa-list fa-fw'></i>"
-  weight = 9
-  identifier = "post"
-  url = "/post/"
- [[menu.main]]
-  name = "Tags"
-  pre = "<i class='fa fa-tags fa-fw'></i>"
-  weight = 10
-  identifier = "tags"
-  url = "/tags/"
 
-[social]
- github = "vle-forge"
- facebook = "groups/vle.project"

@@ -4,8 +4,6 @@ tags = ["publications"]
 title = "Publications"
 +++
 
-# Publications
-
 ## How to cite VLE
 
 Please use the following reference:

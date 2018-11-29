@@ -10,7 +10,7 @@ description = "Version 2.0 will be declared as stable"
 The new stable version of VLE, now called 2.0 is coming soon. This
 version introduces new stable API, new GUI, new features.
 
-More details on the [VLE 2.0]({{< ref "vle-20.md" >}}) page. The
+More details on the [VLE 2.0](vle-20.md) page. The
 source are available in [Github](https://github.com/vle-forge/).
 
 Please try it!
@@ -65,6 +65,6 @@ and no shared libraries are necessary.
 
 ----
 
-More details on the [VLE 2.0]({{< ref "vle-20.md" >}}) page.
+More details on the [VLE 2.0](vle-20.md) page.
 
 As usual, the source are available in [Github](https://github.com/vle-forge/).

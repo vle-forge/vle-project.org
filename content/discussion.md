@@ -2,9 +2,10 @@
 title = "Discussion"
 tags = ["discussion"]
 description = "How to discuss with developers or users?"
+weight = 14
 +++
 
-# Mailing lists
+## Mailing lists
 
 The mailing lists are the heart of the VLE community. This list is oriented
 toward casual users of the VLE libraries, model developers or VLE developers.
@@ -18,7 +19,7 @@ technical or otherwise, are reached via public discussion on this mailing list.
 Subscribe or unsubscribe at the [VLE list home
 page](https://groupes.renater.fr/sympa/info/vle).
 
-# IRC
+## IRC
 
 The VLE project has an IRC channel available on the [Freenode
 server](http://www.freenode.net). This channel requires no password. You can
@@ -30,6 +31,5 @@ Windows or Linux), [Adium](http://adium.im/) (for Mac OS X) or
 The parameters to be configured are:
 
 - Host: irc.freenode.net
-- Port: 8001 (or 6667 If the first one does not work)
 - Channel: #vle
-- Encoding: UTF-8 (preferably)
+- Port: 6667 or 8001
