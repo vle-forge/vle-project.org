@@ -37,6 +37,6 @@ If you have questions about VLE like how to download and install the software, [
 
 ## Archives
 
-News archives [news](post).
+News post archives [news](post).
 
 The [archives](archives).
