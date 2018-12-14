@@ -15,6 +15,8 @@ experimental frames and capture result of simulation into matrix or dataframe.
 
 ## Windows
 
+The binary package provided only work with [R 3.5](https://www.r-project.org/) or greater.
+
 * Download [R](http://cran.rstudio.com/bin/windows/base/) and
   install it. You have to use the 32 bits application R i386.
 * [install vle](../../../download)
@@ -25,7 +27,6 @@ experimental frames and capture result of simulation into matrix or dataframe.
 * [Download RVLE](http://www.vle-project.org/pub/vle/2.0/2.0.2/rvle_2.0.2-7.zip).
 * install rvle by choosing into the menu _install packages from local
   zip file_.
-
 
 ## Linux/Unix
 
