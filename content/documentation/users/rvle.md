@@ -17,12 +17,12 @@ experimental frames and capture result of simulation into matrix or dataframe.
 
 * Download [R](http://cran.rstudio.com/bin/windows/base/) and
   install it. You have to use the 32 bits application R i386.
-* [install vle](../installation)
+* [install vle](../../../download)
 * add an environment variable `VLE_HOME` with value
   `c:\users\login\vle` (replace `login` with your own login name). The
   directory must exist before launching application.
 * install the R Package RUnit from the CRAN:
-* [Download RVLE](http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/rvle-2.0.0_0.zip).
+* [Download RVLE](http://www.vle-project.org/pub/vle/2.0/2.0.2/rvle_2.0.2-7.zip).
 * install rvle by choosing into the menu _install packages from local
   zip file_.
 
@@ -38,7 +38,7 @@ release.
 
 Or by wget/curl:
 
-    wget http://vle-project.org/pub/vle/2.0/2.0.0-alpha1/rvle-2.0.0_0.tar.gz
+    wget http://www.vle-project.org/pub/vle/2.0/2.0.2/rvle_2.0.2-7.zip
 
 * install R
 * install package RUnit
