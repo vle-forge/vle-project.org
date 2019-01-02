@@ -20,13 +20,13 @@ trust in. For example to add an URL of a distribution `http://mydistrib/`,
 update the following line:
 
 ```
-vle.remote.url=http://www.vle-project.org/pub/2.0
+vle.remote.url=https://www.vle-project.org/pub/2.0
 ```
 
 With:
 
 ```
-vle.remote.url=http://www.vle-project.org/pub/2.0,http://mydistrib/
+vle.remote.url=https://www.vle-project.org/pub/2.0,http://mydistrib/
 ```
 
 Then you have to perform an update of the local view of the remote packages:
