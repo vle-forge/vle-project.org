@@ -23,10 +23,11 @@ page](https://groupes.renater.fr/sympa/info/vle).
 
 The VLE project has an IRC channel available on the [Freenode
 server](http://www.freenode.net). This channel requires no password. You can
-use any standard [IRC client](http://en.wikipedia.org/wiki/Internet_Relay_Chat)
-client: [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) (for
-Windows or Linux), [Adium](http://adium.im/) (for Mac OS X) or
-[irssi](http://www.irssi.org/irssi).
+use any standard [IRC client](http://en.wikipedia.org/wiki/Internet_Relay_Chat):
+
+- [webchat](https://webchat.freenode.net/), [kiwiirc](https://kiwiirc.com/) web clients
+- [Pidgin](http://www.pidgin.im/), [xchat](http://xchat.org/) for both Windows or Linux
+- [Adium](http://adium.im/) for Mac OS X
 
 The parameters to be configured are:
 
