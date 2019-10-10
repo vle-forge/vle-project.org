@@ -6,7 +6,7 @@ description = "VLE"
 weight = 5
 +++
 
-# The VLE Project for dynamical system modeling and simultation
+# The VLE Project for dynamical system modeling and simulation
 
 ## Getting Started
 
