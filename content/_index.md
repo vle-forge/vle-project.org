@@ -40,3 +40,5 @@ If you have questions about VLE like how to download and install the software, [
 News post archives [news](post).
 
 The [archives](archives).
+
+{{< figure src="/media/Logotype-INRA-transparent-small.png" link="https://www.inra.fr">}}
